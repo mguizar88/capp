@@ -7,10 +7,12 @@ import useSiteMetadata from './SiteMetadata'
 import '@fortawesome/fontawesome-free/css/all.css'
 import './main.scss'
 
+import whatsapp from '../../static/img/whatsapp.png'
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div className="" >
+    <div style={{position: "relative",}} >
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -49,6 +51,20 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
+      <a 
+        style={{
+          position: "fixed",
+          width: "80px",
+          bottom: "30px",
+          right: "30px",
+          zIndex: "9999999",
+        }}
+        href="https://wa.me/5219981098729"
+        target="_BLANK"
+      >
+        <img className="w-100" src={whatsapp} alt="Whatsapp Logo" />
+      </a>
+      <Footer />
       <Footer />
     </div>
   )
