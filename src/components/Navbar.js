@@ -64,30 +64,30 @@ const Navbar = class extends React.Component {
                   </span>
                   Carrito
                 </Link>
-                <Link className="navbar-item secondary-links column-direction has-text-white" to="/products">
+                <Link className="navbar-item secondary-links column-direction has-text-white" to="/contacto/">
                   <span className="icon is-small has-text-white">
                     <i className="far fa-comments"></i>
                   </span>
                   Contacto
                 </Link>
-                <Link className="navbar-item secondary-links column-direction has-text-white" to="/blog">
+                <Link className="navbar-item secondary-links column-direction has-text-white" to="/nosotros/">
                   <span className="icon is-small has-text-white">
                     <i className="fas fa-users"></i>
                   </span>
                   Nosotros
                 </Link>
-                <Link className="navbar-item secondary-links column-direction has-text-white" to="/contact">
+                <a className="navbar-item secondary-links column-direction has-text-white" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/capptour/">
                   <span className="icon is-small has-text-white">
                     <i className="fab fa-facebook"></i>
                   </span>
                   Facebook
-                </Link>
-                <Link className="navbar-item secondary-links column-direction has-text-white" to="/contact/examples">
+                </a>
+                <a className="navbar-item secondary-links column-direction has-text-white" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/capptour/">
                   <span className="icon is-small has-text-white">
                     <i className="fab fa-instagram"></i>
                   </span>
                   Instagram
-                </Link>
+                </a>
               </div>
               <div className="navbar-end flex-vertical-align">
                 <input className="input is-rounded" type="text" placeholder="Buscar"/>
