@@ -65,7 +65,6 @@ const TemplateWrapper = ({ children }) => {
         <img className="w-100" src={whatsapp} alt="Whatsapp Logo" />
       </a>
       <Footer />
-      <Footer />
     </div>
   )
 }
