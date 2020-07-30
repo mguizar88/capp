@@ -98,7 +98,7 @@ export const IndexPageTemplate = ({
                 }}
               >
                 <div className="carousel-caption tour-caption d-none d-md-block">
-                  <h3 className="title is-2 is-size-4-mobile t-yellow">Chichen Itza</h3>
+                  <h3 className="title is-2 is-size-4-mobile t-yellow">Tour Laguna de 7 colores de Bacalar</h3>
                   <div className="indicators">
                     <span>
                       <i className="fas fa-clock"></i>
@@ -118,12 +118,12 @@ export const IndexPageTemplate = ({
                     </span>
                   </div>
                   <p className="is-hidden-mobile">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Comienza con una visita al Canal de los Piratas, un lugar perfecto en aguas cristalinas.
+                    A continuación, nos trasladamos al "Cenote Negro"; el punto más profundo de la laguna. 
+                    Nuestra próxima visita es al "Cenote Esmeralda", donde estará en una excelente posición para apreciar los diferentes tonos de azul de la laguna. 
+                    Luego nos trasladamos al "Cenote Cocalitos", hogar de estromatolitos, que son estructuras en forma de roca que producen oxígeno. 
+                    Y nuestra última parada será "Bird Island", donde podrá disfrutar de la paz y la tranquilidad de la laguna y dependiendo de la temporada, 
+                    es posible que también vea múltiples especies de aves.
                   </p>
                   <button className="button">Ver Más</button>
                 </div>     
@@ -138,7 +138,7 @@ export const IndexPageTemplate = ({
                 }}
               >
                 <div className="carousel-caption tour-caption d-none d-md-block">
-                  <h3 className="title is-2 is-size-4-mobile t-yellow">Tour Title</h3>
+                  <h3 className="title is-2 is-size-4-mobile t-yellow">Tour 3 islas Holbox</h3>
                   <div className="indicators">
                     <span>
                       <i className="fas fa-clock"></i>
@@ -158,12 +158,10 @@ export const IndexPageTemplate = ({
                     </span>
                   </div>
                   <p className="is-hidden-mobile">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Recorre en lancha los 3 de los lugares más populares de Holbox: <br/>
+                    • Yalahau; un ojo de agua dulce.<br/>
+                    • Isla pájaros; un santuario de aves en anidación.<br/>
+                    • Isla pasión; un lugar con aguas azul multicolor y bancos de arena en donde usualmente llegan a alimentarse los flamingos.
                   </p>
                   <button className="button">Ver Más</button>
                 </div>
@@ -178,7 +176,7 @@ export const IndexPageTemplate = ({
                 }}
               >
                 <div className="carousel-caption tour-caption d-none d-md-block is-rounded">
-                  <h3 className="title is-2 is-size-4-mobile t-yellow">Tour Title</h3>
+                  <h3 className="title is-2 is-size-4-mobile t-yellow">Experiencia Tiburón ballena</h3>
                   <div className="indicators">
                     <span>
                       <i className="fas fa-clock"></i>
@@ -198,12 +196,10 @@ export const IndexPageTemplate = ({
                     </span>
                   </div>
                   <p className="is-hidden-mobile">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    De junio a septiembre, te ofrecemos una experiencia en donde podrás nadar y hacer snorkel con el tiburón ballena en su hábitat natural. 
+                    En este tour llegamos, a Cabo Catoche para ver al tiburón ballena y nadar junto a él. 
+                    Posteriormente, hacemos una parada en los cuevones frente a Cabo Catoche para snorkelear y disfrutar de la vida marina; 
+                    para finalizar en los manglares de Santa Paula, donde disfrutaremos de un ceviche.
                   </p>
                   <button className="button">Ver Más</button>
                 </div>
@@ -243,10 +239,9 @@ export const IndexPageTemplate = ({
               <div className="content is-hidden-mobile">
                 <h3 className="title">Tours Culturales</h3>
                 <p className="description has-text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
+                  México, es uno de los países con mayor riqueza cultural, geográfica e histórica. 
+                  En nuestros tours culturales, comprenderás y disfrutarás el conjunto de rasgos y elementos distintivos, espirituales, materiales 
+                  y afectivos que caracterizan a un destino específico.
                 </p>
                 <span></span>
                 <Link className="button has-text-white" to="tours">Ver Tours</Link>
@@ -263,10 +258,8 @@ export const IndexPageTemplate = ({
               <div className="content is-hidden-mobile">
                 <h3 className="title">Tours Acuaticos</h3>
                 <p className="description has-text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
+                  El Caribe Mexicano, es famoso por sus maravillosas playas y aguas azul turquesa, haciendo de este un destino ideal
+                  para los amantes de la práctica de actividades acuáticas como: buceo, snorkel, pesca, nado con delfines, paseos con en barco, entre otros. 
                 </p>
                 <span></span>
                 <Link className="button has-text-white" to="tours">Ver Tours</Link>
@@ -278,15 +271,14 @@ export const IndexPageTemplate = ({
                 <span className="icon is-large">
                   <i class="fas fa-3x fa-map-marked-alt"></i>
                 </span>
-                <p>Tours Vacacionales</p>
+                <p>Tours de Aventura</p>
               </div>
               <div className="content is-hidden-mobile">
                 <h3 className="title">Tours Vacacionales</h3>
                 <p className="description has-text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
+                  México, es un territorio rico en condiciones biológicas, climatológicas y geográficas que permiten al turista encontrar
+                  una amplia gama de posibilidades de recreación en entornos naturales. Aventúrate y desafía tus habilidades, 
+                  con experiencias de liberación física y esparcimiento en la naturaleza. 
                 </p>
                 <span></span>
                 <Link className="button has-text-white" to="tours">Ver Tours</Link>
@@ -314,24 +306,6 @@ export const IndexPageTemplate = ({
           <div className="card-columns tour-type-container">
             <Link to="/tours">
               <div className="card no-border" 
-                style={{
-                  height: '250px',
-                  backgroundImage: `url(${
-                    !!cancun.childImageSharp ? cancun.childImageSharp.fluid.src : cancun
-                  })`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              >
-                <div className="discount-overlay">
-                  <h4 className="title has-text-white has-text-centered">Cancún</h4>
-                  <p className="discount-number has-text-centered has-text-white">50%</p>
-                  <p className="has-text-white has-text-centered">de descuento</p>
-                </div>
-              </div>
-            </Link>
-            <Link to="/tours">
-              <div className="card no-border" 
               style={{
                 height: '150px',
                 backgroundImage: `url(${
@@ -347,47 +321,11 @@ export const IndexPageTemplate = ({
                   <p className="has-text-white has-text-centered">de descuento</p>
                 </div>
               </div>
-            </Link>  
+            </Link>
             <Link to="/tours">
               <div className="card no-border" 
                 style={{
                   height: '150px',
-                  backgroundImage: `url(${
-                      !!culturales.childImageSharp ? culturales.childImageSharp.fluid.src : culturales
-                  })`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              >
-                <div className="discount-overlay">
-                  <h4 className="title has-text-white has-text-centered">Cancún</h4>
-                  <p className="discount-number has-text-centered has-text-white">25%</p>
-                  <p className="has-text-white has-text-centered">de descuento</p>
-                </div>
-              </div>
-            </Link>  
-            <Link to="/tours">
-              <div className="card no-border" 
-                style={{
-                  height: '150px',
-                  backgroundImage: `url(${
-                    !!thirdTour.childImageSharp ? thirdTour.childImageSharp.fluid.src : thirdTour
-                  })`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              >
-                <div className="discount-overlay">
-                  <h4 className="title has-text-white has-text-centered">Cancún</h4>
-                  <p className="discount-number has-text-centered has-text-white">15%</p>
-                  <p className="has-text-white has-text-centered">de descuento</p>
-                </div>
-              </div>
-            </Link>  
-            <Link to="/tours">
-              <div className="card no-border" 
-                style={{
-                  height: '350px',
                   backgroundImage: `url(${
                     !!acuaticos.childImageSharp ? acuaticos.childImageSharp.fluid.src : acuaticos
                   })`,
@@ -397,25 +335,7 @@ export const IndexPageTemplate = ({
               >
                 <div className="discount-overlay">
                   <h4 className="title has-text-white has-text-centered">Cancún</h4>
-                  <p className="discount-number has-text-centered has-text-white">80%</p>
-                  <p className="has-text-white has-text-centered">de descuento</p>
-                </div>
-              </div>
-            </Link>  
-            <Link to="/tours">
-              <div className="card no-border" 
-                style={{
-                  height: '150px',
-                  backgroundImage: `url(${
-                    !!secondTour.childImageSharp ? secondTour.childImageSharp.fluid.src : secondTour
-                  })`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              >
-                <div className="discount-overlay">
-                  <h4 className="title has-text-white has-text-centered">Cancún</h4>
-                  <p className="discount-number has-text-centered has-text-white">10%</p>
+                  <p className="discount-number has-text-centered has-text-white">30%</p>
                   <p className="has-text-white has-text-centered">de descuento</p>
                 </div>
               </div>
@@ -423,7 +343,7 @@ export const IndexPageTemplate = ({
             <Link to="/tours">
               <div className="card no-border" 
                 style={{
-                  height: '350px',
+                  height: '150px',
                   backgroundImage: `url(${
                     !!vacacionales.childImageSharp ? vacacionales.childImageSharp.fluid.src : vacacionales
                   })`,
@@ -433,61 +353,7 @@ export const IndexPageTemplate = ({
               >
                 <div className="discount-overlay">
                   <h4 className="title has-text-white has-text-centered">Cancún</h4>
-                  <p className="discount-number has-text-centered has-text-white">75%</p>
-                  <p className="has-text-white has-text-centered">de descuento</p>
-                </div>
-              </div>
-            </Link>
-            <Link to="/tours">
-              <div className="card no-border" 
-                style={{
-                  height: '150px',
-                  backgroundImage: `url(${
-                    !!tour.childImageSharp ? tour.childImageSharp.fluid.src : tour
-                  })`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              >
-                <div className="discount-overlay">
-                  <h4 className="title has-text-white has-text-centered">Cancún</h4>
-                  <p className="discount-number has-text-centered has-text-white">25%</p>
-                  <p className="has-text-white has-text-centered">de descuento</p>
-                </div>
-              </div>
-            </Link>
-            <Link to="/tours">
-              <div className="card no-border" 
-                style={{
-                  height: '150px',
-                  backgroundImage: `url(${
-                    !!snorkel.childImageSharp ? snorkel.childImageSharp.fluid.src : snorkel
-                  })`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              >
-                <div className="discount-overlay">
-                  <h4 className="title has-text-white has-text-centered">Cancún</h4>
-                  <p className="discount-number has-text-centered has-text-white">5%</p>
-                  <p className="has-text-white has-text-centered">de descuento</p>
-                </div>
-              </div>
-            </Link>
-            <Link to="/tours">
-              <div className="card no-border" 
-                style={{
-                  height: '250px',
-                  backgroundImage: `url(${
-                    !!tour.childImageSharp ? tour.childImageSharp.fluid.src : tour
-                  })`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              >
-                <div className="discount-overlay">
-                  <h4 className="title has-text-white has-text-centered">Cancún</h4>
-                  <p className="discount-number has-text-centered has-text-white">60%</p>
+                  <p className="discount-number has-text-centered has-text-white">30%</p>
                   <p className="has-text-white has-text-centered">de descuento</p>
                 </div>
               </div>
@@ -532,6 +398,14 @@ export const IndexPageTemplate = ({
                   <textarea className="textarea has-fixed-size is-large" placeholder="Mensaje"></textarea>
                 </div>
               </div>
+              <div className="field">
+                <div className="control has-icons-left">
+                  <input className="input is-large" type="text" placeholder="Tipo de interés" />
+                  <span className="icon is-left">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                </div>
+              </div>
             </form>
           </div>
           <div className="column is-half-desktop is-12-mobile">
@@ -545,16 +419,7 @@ export const IndexPageTemplate = ({
               }}
             >
               <div style={{animationDuration: '1.5s'}} className="contact-info-container">
-                <a className="has-text-white" href="mailto:ventas@grupobeke.com" target="_blank" rel="noopener noreferrer">ventas@grupobeke.com</a>
-              </div>
-              <div style={{animationDuration: '1.9s'}} className="contact-info-container">
-                <a className="has-text-white" href="mailto:ventas@grupobeke.com" target="_blank" rel="noopener noreferrer">ventas@grupobeke.com</a>
-              </div>
-              <div style={{animationDuration: '2.2s'}} className="contact-info-container">
-                <a className="has-text-white" href="mailto:ventas@grupobeke.com" target="_blank" rel="noopener noreferrer">ventas@grupobeke.com</a>
-              </div>
-              <div style={{animationDuration: '2.5s'}} className="contact-info-container">
-                <a className="has-text-white" href="mailto:ventas@grupobeke.com" target="_blank" rel="noopener noreferrer">ventas@grupobeke.com</a>
+                <a className="has-text-white" href="mailto:contacto@capptour.com" target="_blank" rel="noopener noreferrer">contacto@capptour.com</a>
               </div>
             </div>
           </div>
