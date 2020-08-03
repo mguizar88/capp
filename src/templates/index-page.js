@@ -149,10 +149,10 @@ export const IndexPageTemplate = ({
                       <i className="fas fa-utensils"></i>
                     </span>
                     <span>
-                        <i className="icons"><img style={{width: 16px}} src={dive} alt="snorkel"/></i>
+                        <i className="icons"><img style={{width: '16px'}} src={dive} alt="snorkel"/></i>
                     </span>
                     <span>
-                        <i className="icons"><img style={{width: 16px}} src={vest} alt="vest" /></i>
+                        <i className="icons"><img style={{width: '16px'}} src={vest} alt="vest" /></i>
                     </span>
                     <span>
                       <i className="far fa-star"></i>
@@ -190,10 +190,10 @@ export const IndexPageTemplate = ({
                       <i className="fas fa-utensils"></i>
                     </span>
                     <span>
-                        <i className="icons"><img style={{width: 16px}} src={dive} alt="snorkel"/></i>
+                        <i className="icons"><img style={{width: '16px'}} src={dive} alt="snorkel"/></i>
                     </span>
                     <span>
-                        <i className="icons"><img style={{width: 16px}} src={vest} alt="vest" /></i>
+                        <i className="icons"><img style={{width: '16px'}} src={vest} alt="vest" /></i>
                     </span>
                     <span>
                       <i className="far fa-star"></i>
