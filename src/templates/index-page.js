@@ -26,8 +26,6 @@ export const IndexPageTemplate = ({
   cancun,
   snorkel,
   animatable,
-  dive,
-  vest,
 }) => (
   <div>
     <div
@@ -148,12 +146,6 @@ export const IndexPageTemplate = ({
                       <i className="fas fa-utensils"></i>
                     </span>
                     <span>
-                      <i className="icons"><img src={dive.childImageSharp.fluid.src} alt="snorkel"/></i>
-                    </span>
-                    <span>
-                      <i className="icons"><img src={vest.childImageSharp.fluid.src} alt="vest" /></i>
-                    </span>
-                    <span>
                       <i className="far fa-star"></i>
                       <i className="far fa-star"></i>
                       <i className="far fa-star"></i>
@@ -187,12 +179,6 @@ export const IndexPageTemplate = ({
                     </span>
                     <span>
                       <i className="fas fa-utensils"></i>
-                    </span>
-                    <span>
-                      <i className="icons"><img src={dive.childImageSharp.fluid.src} alt="snorkel"/></i>
-                    </span>
-                    <span>
-                      <i className="icons"><img src={vest.childImageSharp.fluid.src} alt="vest" /></i>
                     </span>
                     <span>
                       <i className="far fa-star"></i>
@@ -470,6 +456,8 @@ const IndexPage = ({ data }) => {
   const animatable = data.animatable
   const dive = data.dive
   const vest = data.vest
+
+  console.log(data)
 
   return (
     <Layout>
