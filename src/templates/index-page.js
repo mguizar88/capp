@@ -26,7 +26,7 @@ export const IndexPageTemplate = ({
   cancun,
   snorkel,
   animatable,
-  snorkel,
+  dive,
   vest,
 }) => (
   <div>
@@ -148,7 +148,7 @@ export const IndexPageTemplate = ({
                       <i className="fas fa-utensils"></i>
                     </span>
                     <span>
-                      <i className="icons"><img src={snorkel.childImageSharp.fluid.src} alt="snorkel"/></i>
+                      <i className="icons"><img src={dive.childImageSharp.fluid.src} alt="snorkel"/></i>
                     </span>
                     <span>
                       <i className="icons"><img src={vest.childImageSharp.fluid.src} alt="vest" /></i>
@@ -189,7 +189,7 @@ export const IndexPageTemplate = ({
                       <i className="fas fa-utensils"></i>
                     </span>
                     <span>
-                      <i className="icons"><img src={snorkel.childImageSharp.fluid.src} alt="snorkel"/></i>
+                      <i className="icons"><img src={dive.childImageSharp.fluid.src} alt="snorkel"/></i>
                     </span>
                     <span>
                       <i className="icons"><img src={vest.childImageSharp.fluid.src} alt="vest" /></i>
@@ -468,7 +468,7 @@ const IndexPage = ({ data }) => {
   const cancun = data.cancun
   const snorkel = data.snorkel
   const animatable = data.animatable
-  const snorkel = data.snorkel
+  const dive = data.dive
   const vest = data.vest
 
   return (
@@ -491,6 +491,8 @@ const IndexPage = ({ data }) => {
         culturales={culturales}
         vacacionales={vacacionales}
         snorkel={snorkel}
+        vest={vest}
+        dive={dive}
         animatable={animatable}
       />
     </Layout>
@@ -586,7 +588,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    snorkel: file(relativePath: { eq: "dive.svg" }){
+    dive: file(relativePath: { eq: "dive.svg" }){
       childImageSharp {
         fluid(maxWidth: 20) {
           ...GatsbyImageSharpFluid
