@@ -114,37 +114,14 @@ const Navbar = class extends React.Component {
                   Hoteles
                 </Link>
                 <Link className="navbar-item is-purple" to="/blog">
-                  Restaurantes
+                  Transportación
                 </Link>
                 <Link className="navbar-item is-purple" to="/contact">
-                  Rentas vacacionales
+                  Circuitos
                 </Link>
-                <Link className="navbar-item is-purple" to="/contact/examples">
-                  Paquetes vacacionales
+                <Link className="navbar-item is-purple" to="/tours">
+                  Experiencias
                 </Link>
-                <div className="navbar-item has-dropdown is-hoverable">
-                  <Link className="navbar-item is-purple" to="/tours">
-                    Tours
-                  </Link>
-
-                  <div className="navbar-dropdown">
-                    <Link className="navbar-item is-purple" to="/contact/examples">
-                      Acuaticos
-                    </Link>
-                    <Link className="navbar-item is-purple" to="/contact/examples">
-                      Al aire libre
-                    </Link>
-                    <Link className="navbar-item is-purple" to="/contact/examples">
-                      Culturales
-                    </Link>
-                    <Link className="navbar-item is-purple" to="/contact/examples">
-                      Deportes Acuaticos
-                    </Link>
-                    <Link className="navbar-item is-purple" to="/contact/examples">
-                      Tematicos
-                    </Link>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
