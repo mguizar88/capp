@@ -6,8 +6,6 @@ import Img from "gatsby-image"
 import Layout from '../components/Layout'
 import '../components/index.sass'
 
-import videoWayak from '../img/wayak.mp4'
-
 export const IndexPageTemplate = ({
   image,
   title,
@@ -28,6 +26,8 @@ export const IndexPageTemplate = ({
   cancun,
   snorkel,
   animatable,
+  snorkel,
+  vest,
 }) => (
   <div>
     <div
@@ -148,7 +148,10 @@ export const IndexPageTemplate = ({
                       <i className="fas fa-utensils"></i>
                     </span>
                     <span>
-                      <i className="fas fa-shuttle-van"></i>
+                      <i className="icons"><img src={snorkel.childImageSharp.fluid.src} alt="snorkel"/></i>
+                    </span>
+                    <span>
+                      <i className="icons"><img src={vest.childImageSharp.fluid.src} alt="vest" /></i>
                     </span>
                     <span>
                       <i className="far fa-star"></i>
@@ -186,7 +189,10 @@ export const IndexPageTemplate = ({
                       <i className="fas fa-utensils"></i>
                     </span>
                     <span>
-                      <i className="fas fa-shuttle-van"></i>
+                      <i className="icons"><img src={snorkel.childImageSharp.fluid.src} alt="snorkel"/></i>
+                    </span>
+                    <span>
+                      <i className="icons"><img src={vest.childImageSharp.fluid.src} alt="vest" /></i>
                     </span>
                     <span>
                       <i className="far fa-star"></i>
@@ -238,7 +244,7 @@ export const IndexPageTemplate = ({
               </div>
               <div className="content is-hidden-mobile">
                 <h3 className="title">Tours Culturales</h3>
-                <p className="description has-text-white">
+                <p className="description has-text-white has-text-justified">
                   México, es uno de los países con mayor riqueza cultural, geográfica e histórica. 
                   En nuestros tours culturales, comprenderás y disfrutarás el conjunto de rasgos y elementos distintivos, espirituales, materiales 
                   y afectivos que caracterizan a un destino específico.
@@ -253,11 +259,11 @@ export const IndexPageTemplate = ({
                 <span className="icon is-large">
                   <i class="fas fa-3x fa-water"></i>
                 </span>
-                <p>Tours Acuaticos</p>
+                <p>Tours Acuáticos</p>
               </div>
               <div className="content is-hidden-mobile">
                 <h3 className="title">Tours Acuaticos</h3>
-                <p className="description has-text-white">
+                <p className="description has-text-white has-text-justified">
                   El Caribe Mexicano, es famoso por sus maravillosas playas y aguas azul turquesa, haciendo de este un destino ideal
                   para los amantes de la práctica de actividades acuáticas como: buceo, snorkel, pesca, nado con delfines, paseos con en barco, entre otros. 
                 </p>
@@ -274,8 +280,8 @@ export const IndexPageTemplate = ({
                 <p>Tours de Aventura</p>
               </div>
               <div className="content is-hidden-mobile">
-                <h3 className="title">Tours Vacacionales</h3>
-                <p className="description has-text-white">
+                <h3 className="title">Tours de Aventura</h3>
+                <p className="description has-text-white has-text-justified">
                   México, es un territorio rico en condiciones biológicas, climatológicas y geográficas que permiten al turista encontrar
                   una amplia gama de posibilidades de recreación en entornos naturales. Aventúrate y desafía tus habilidades, 
                   con experiencias de liberación física y esparcimiento en la naturaleza. 
@@ -316,7 +322,7 @@ export const IndexPageTemplate = ({
               }}
               >
                 <div className="discount-overlay">
-                  <h4 className="title has-text-white has-text-centered">Cancún</h4>
+                  <h4 className="title has-text-white has-text-centered">Tour Laguna de 7 colores de Bacalar</h4>
                   <p className="discount-number has-text-centered has-text-white">30%</p>
                   <p className="has-text-white has-text-centered">de descuento</p>
                 </div>
@@ -334,7 +340,7 @@ export const IndexPageTemplate = ({
                 }}
               >
                 <div className="discount-overlay">
-                  <h4 className="title has-text-white has-text-centered">Cancún</h4>
+                  <h4 className="title has-text-white has-text-centered">Tour 3 islas Holbox</h4>
                   <p className="discount-number has-text-centered has-text-white">30%</p>
                   <p className="has-text-white has-text-centered">de descuento</p>
                 </div>
@@ -352,7 +358,7 @@ export const IndexPageTemplate = ({
                 }}
               >
                 <div className="discount-overlay">
-                  <h4 className="title has-text-white has-text-centered">Cancún</h4>
+                  <h4 className="title has-text-white has-text-centered">Experiencia Tiburón ballena</h4>
                   <p className="discount-number has-text-centered has-text-white">30%</p>
                   <p className="has-text-white has-text-centered">de descuento</p>
                 </div>
@@ -398,13 +404,20 @@ export const IndexPageTemplate = ({
                   <textarea className="textarea has-fixed-size is-large" placeholder="Mensaje"></textarea>
                 </div>
               </div>
-              <div className="field">
-                <div className="control has-icons-left">
-                  <input className="input is-large" type="text" placeholder="Tipo de interés" />
-                  <span className="icon is-left">
+              <div class="field">
+                <p class="control has-icons-left">
+                  <span class="select">
+                    <select>
+                      <option selected>Tours</option>
+                      <option>Circuito</option>
+                      <option>Transportación</option>
+                      <option>Paquete vacacional</option>
+                    </select>
+                  </span>
+                  <span class="icon is-small is-left">
                     <i class="fas fa-map-marker-alt"></i>
                   </span>
-                </div>
+                </p>
               </div>
             </form>
           </div>
@@ -455,6 +468,8 @@ const IndexPage = ({ data }) => {
   const cancun = data.cancun
   const snorkel = data.snorkel
   const animatable = data.animatable
+  const snorkel = data.snorkel
+  const vest = data.vest
 
   return (
     <Layout>
@@ -508,14 +523,14 @@ export const pageQuery = graphql`
         }
       }
     }
-    acuaticos: file(relativePath: { eq: "acuaticos.jpg" }){
+    acuaticos: file(relativePath: { eq: "arrecife.jpg" }){
       childImageSharp {
         fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    vacacionales: file(relativePath: { eq: "vacacionales.jpg" }){
+    vacacionales: file(relativePath: { eq: "aventura.jpg" }){
       childImageSharp {
         fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
@@ -536,21 +551,21 @@ export const pageQuery = graphql`
         }
       }
     }
-    tour: file(relativePath: { eq: "tour.jpg" }){
+    tour: file(relativePath: { eq: "bacalar-laguna.jpg" }){
       childImageSharp {
         fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    secondTour: file(relativePath: { eq: "cenote.jpg" }){
+    secondTour: file(relativePath: { eq: "holbox-cenote.jpg" }){
       childImageSharp {
         fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    third: file(relativePath: { eq: "buceo.jpg" }){
+    third: file(relativePath: { eq: "tiburonballena.jpg" }){
       childImageSharp {
         fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
@@ -567,6 +582,20 @@ export const pageQuery = graphql`
     divider: file(relativePath: { eq: "separador.png" }){
       childImageSharp {
         fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    snorkel: file(relativePath: { eq: "dive.svg" }){
+      childImageSharp {
+        fluid(maxWidth: 20) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    vest: file(relativePath: { eq: "chaleco-salvavidas.svg" }){
+      childImageSharp {
+        fluid(maxWidth: 20) {
           ...GatsbyImageSharpFluid
         }
       }
