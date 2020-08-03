@@ -6,6 +6,9 @@ import Img from "gatsby-image"
 import Layout from '../components/Layout'
 import '../components/index.sass'
 
+import dive from '../../static/img/dive.svg'
+import vest from '../../static/img/chaleco-salvavidas.svg'
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -146,6 +149,12 @@ export const IndexPageTemplate = ({
                       <i className="fas fa-utensils"></i>
                     </span>
                     <span>
+                        <i className="icons"><img src={dive} alt="snorkel"/></i>
+                    </span>
+                    <span>
+                        <i className="icons"><img src={vest} alt="vest" /></i>
+                    </span>
+                    <span>
                       <i className="far fa-star"></i>
                       <i className="far fa-star"></i>
                       <i className="far fa-star"></i>
@@ -179,6 +188,12 @@ export const IndexPageTemplate = ({
                     </span>
                     <span>
                       <i className="fas fa-utensils"></i>
+                    </span>
+                    <span>
+                        <i className="icons"><img src={dive} alt="snorkel"/></i>
+                    </span>
+                    <span>
+                        <i className="icons"><img src={vest} alt="vest" /></i>
                     </span>
                     <span>
                       <i className="far fa-star"></i>
@@ -299,6 +314,7 @@ export const IndexPageTemplate = ({
             <Link to="/tours">
               <div className="card no-border" 
               style={{
+                height: '300px',
                 backgroundImage: `url(${
                     !!snorkel.childImageSharp ? snorkel.childImageSharp.fluid.src : snorkel
                   })`,
@@ -316,6 +332,7 @@ export const IndexPageTemplate = ({
             <Link to="/tours">
               <div className="card no-border" 
                 style={{
+                  height: '300px',
                   backgroundImage: `url(${
                     !!acuaticos.childImageSharp ? acuaticos.childImageSharp.fluid.src : acuaticos
                   })`,
@@ -333,6 +350,7 @@ export const IndexPageTemplate = ({
             <Link to="/tours">
               <div className="card no-border" 
                 style={{
+                  height: '300px',
                   backgroundImage: `url(${
                     !!vacacionales.childImageSharp ? vacacionales.childImageSharp.fluid.src : vacacionales
                   })`,
@@ -451,8 +469,6 @@ const IndexPage = ({ data }) => {
   const cancun = data.cancun
   const snorkel = data.snorkel
   const animatable = data.animatable
-  const dive = data.dive
-  const vest = data.vest
 
   console.log(data)
 
@@ -476,8 +492,6 @@ const IndexPage = ({ data }) => {
         culturales={culturales}
         vacacionales={vacacionales}
         snorkel={snorkel}
-        vest={vest}
-        dive={dive}
         animatable={animatable}
       />
     </Layout>
@@ -569,20 +583,6 @@ export const pageQuery = graphql`
     divider: file(relativePath: { eq: "separador.png" }){
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    dive: file(relativePath: { eq: "dive.svg" }){
-      childImageSharp {
-        fluid(maxWidth: 20) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    vest: file(relativePath: { eq: "chaleco-salvavidas.svg" }){
-      childImageSharp {
-        fluid(maxWidth: 20) {
           ...GatsbyImageSharpFluid
         }
       }
