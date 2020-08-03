@@ -299,7 +299,6 @@ export const IndexPageTemplate = ({
             <Link to="/tours">
               <div className="card no-border" 
               style={{
-                height: '150px',
                 backgroundImage: `url(${
                     !!snorkel.childImageSharp ? snorkel.childImageSharp.fluid.src : snorkel
                   })`,
@@ -317,7 +316,6 @@ export const IndexPageTemplate = ({
             <Link to="/tours">
               <div className="card no-border" 
                 style={{
-                  height: '150px',
                   backgroundImage: `url(${
                     !!acuaticos.childImageSharp ? acuaticos.childImageSharp.fluid.src : acuaticos
                   })`,
@@ -335,7 +333,6 @@ export const IndexPageTemplate = ({
             <Link to="/tours">
               <div className="card no-border" 
                 style={{
-                  height: '150px',
                   backgroundImage: `url(${
                     !!vacacionales.childImageSharp ? vacacionales.childImageSharp.fluid.src : vacacionales
                   })`,
