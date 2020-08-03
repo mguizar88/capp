@@ -6,8 +6,8 @@ import Img from "gatsby-image"
 import Layout from '../components/Layout'
 import '../components/index.sass'
 
-import dive from '../../static/img/dive.svg'
-import vest from '../../static/img/chaleco-salvavidas.svg'
+import dive from '../../static/img/dive.png'
+import vest from '../../static/img/chaleco.png'
 
 export const IndexPageTemplate = ({
   image,
@@ -98,7 +98,7 @@ export const IndexPageTemplate = ({
                   backgroundPosition: 'center'
                 }}
               >
-                <div className="carousel-caption tour-caption d-none d-md-block">
+                <div className="carousel-caption px-4 py-4 tour-caption d-none d-md-block">
                   <h3 className="title is-2 is-size-4-mobile t-yellow">Tour Laguna de 7 colores de Bacalar</h3>
                   <div className="indicators">
                     <span>
@@ -138,7 +138,7 @@ export const IndexPageTemplate = ({
                   backgroundPosition: 'center'
                 }}
               >
-                <div className="carousel-caption tour-caption d-none d-md-block">
+                <div className="carousel-caption tour-caption px-4 py-4 d-none d-md-block">
                   <h3 className="title is-2 is-size-4-mobile t-yellow">Tour 3 islas Holbox</h3>
                   <div className="indicators">
                     <span>
@@ -149,10 +149,10 @@ export const IndexPageTemplate = ({
                       <i className="fas fa-utensils"></i>
                     </span>
                     <span>
-                        <i className="icons"><img src={dive} alt="snorkel"/></i>
+                        <i className="icons"><img style={{width: 16px}} src={dive} alt="snorkel"/></i>
                     </span>
                     <span>
-                        <i className="icons"><img src={vest} alt="vest" /></i>
+                        <i className="icons"><img style={{width: 16px}} src={vest} alt="vest" /></i>
                     </span>
                     <span>
                       <i className="far fa-star"></i>
@@ -179,7 +179,7 @@ export const IndexPageTemplate = ({
                   backgroundPosition: 'center'
                 }}
               >
-                <div className="carousel-caption tour-caption d-none d-md-block is-rounded">
+                <div className="carousel-caption tour-caption px-4 py-4 d-none d-md-block is-rounded">
                   <h3 className="title is-2 is-size-4-mobile t-yellow">Experiencia Tiburón ballena</h3>
                   <div className="indicators">
                     <span>
@@ -190,10 +190,10 @@ export const IndexPageTemplate = ({
                       <i className="fas fa-utensils"></i>
                     </span>
                     <span>
-                        <i className="icons"><img src={dive} alt="snorkel"/></i>
+                        <i className="icons"><img style={{width: 16px}} src={dive} alt="snorkel"/></i>
                     </span>
                     <span>
-                        <i className="icons"><img src={vest} alt="vest" /></i>
+                        <i className="icons"><img style={{width: 16px}} src={vest} alt="vest" /></i>
                     </span>
                     <span>
                       <i className="far fa-star"></i>
@@ -311,12 +311,12 @@ export const IndexPageTemplate = ({
       >
         <div className="discount-card-container" style={{padding: '50px 0', backgroundColor: 'rgba(71, 50, 120, .9)'}}> 
           <div className="card-columns tour-type-container">
-            <Link to="/tours">
+            <Link to="/tours/bacalar-deluxe/">
               <div className="card no-border" 
               style={{
                 height: '300px',
                 backgroundImage: `url(${
-                    !!snorkel.childImageSharp ? snorkel.childImageSharp.fluid.src : snorkel
+                    !!tour.childImageSharp ? tour.childImageSharp.fluid.src : tour
                   })`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
@@ -329,12 +329,12 @@ export const IndexPageTemplate = ({
                 </div>
               </div>
             </Link>
-            <Link to="/tours">
+            <Link to="/tours/holbox/">
               <div className="card no-border" 
                 style={{
                   height: '300px',
                   backgroundImage: `url(${
-                    !!acuaticos.childImageSharp ? acuaticos.childImageSharp.fluid.src : acuaticos
+                    !!secondTour.childImageSharp ? secondTour.childImageSharp.fluid.src : secondTour
                   })`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
@@ -347,12 +347,12 @@ export const IndexPageTemplate = ({
                 </div>
               </div>
             </Link>
-            <Link to="/tours">
+            <Link to="/tours/tiburon-ballena/">
               <div className="card no-border" 
                 style={{
                   height: '300px',
                   backgroundImage: `url(${
-                    !!vacacionales.childImageSharp ? vacacionales.childImageSharp.fluid.src : vacacionales
+                    !!thirdTour.childImageSharp ? thirdTour.childImageSharp.fluid.src : thirdTour
                   })`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
@@ -409,7 +409,8 @@ export const IndexPageTemplate = ({
                 <p class="control has-icons-left">
                   <span class="select">
                     <select>
-                      <option selected>Tours</option>
+                      <option selected>Tipo de interés</option>
+                      <option>Tours</option>
                       <option>Circuito</option>
                       <option>Transportación</option>
                       <option>Paquete vacacional</option>
