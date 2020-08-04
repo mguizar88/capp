@@ -24,6 +24,7 @@ export default class HotelIndex extends React.Component {
               backgroundColor: '#422e6a',
               color: 'white',
               padding: '1rem',
+              borderRadius: '0.5em',
             }}
           >
             Hoteles
@@ -31,7 +32,7 @@ export default class HotelIndex extends React.Component {
         </div>
         <section className="section">
           <div className="container">
-            <div className="tour-type-container">
+            <div style={{maxWidth: 900px}} className="tour-type-container">
               <div className="tour-type ">
                 <img className="tour-type-rounded" src={pier} />
                 <div className="overlay is-hidden-tablet" style={{backgroundColor: `#422e6a`}}>
