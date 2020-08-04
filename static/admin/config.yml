@@ -81,6 +81,19 @@ collections:
       - {label: Price, name: price, widget: object, fields: [{label: Adults Price, name: adults_price, widget: number, valueType: float}, {label: Children Price, name: children_price, widget: number, valueType: float}, {label: Adults Discount, name: adults_discount, widget: number, valueType: float, required: false}, {label: Children Discount, name: children_discount, widget: number, valueType: float, required: false}, {label: Quintanarroense price, name: q_price, widget: number, valueType: float, required: false}, {label: Transportation price, name: transportation, widget: list, required: false, fields: [{label: Desde, name: from, widget: string}, {label: Precio Adultos, name: adultPrice, widget: number, valueType: float}, {label: Precio niños, name: childPrice, widget: number, valueType: float}]}]}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: Tour type, name: tourType, widget: list }
-  
+      
+  - name: "circuitos"
+    label: "Circuitos"
+    folder: "src/pages/circuitos"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "circuit-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: Image, name: image, widget: image}
+      - {label: Description, name: description, widget: string, required: false}
+      - {label: Price, name: price, widget: object, fields: [{label: Adults Price, name: adults_price, widget: number, valueType: float}, {label: Children Price, name: children_price, widget: number, valueType: float}, {label: Adults Discount, name: adults_discount, widget: number, valueType: float, required: false}, {label: Children Discount, name: children_discount, widget: number, valueType: float, required: false}, {label: Quintanarroense price, name: q_price, widget: number, valueType: float, required: false}, {label: Transportation price, name: transportation, widget: list, required: false, fields: [{label: Desde, name: from, widget: string}, {label: Precio Adultos, name: adultPrice, widget: number, valueType: float}, {label: Precio niños, name: childPrice, widget: number, valueType: float}]}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+   
+
 
       
