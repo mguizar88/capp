@@ -44,8 +44,9 @@ export default class HotelIndex extends React.Component {
                   <h3 className="title">HOTEL PIER BACALAR – ALL INCLUSIVE</h3>
                   <p className="description has-text-white has-text-justified">
                     Rodeado de naturaleza, estarás en un entorno de exclusividad lejos de todo lo cotidiano. Podrás disfrutar de la increíble laguna de Bacalar a unos cuantos pasos de tu habitación y por la noche gozarás del cielo estrellado como nunca antes lo habías visto. 
+                  </p>
                   <span></span>
-                  <Link className="button has-text-white" to="tours">Ver Hotel</Link>
+                  <a target="_blank" rel="noopener noreferrer" className="button has-text-white" href="https://bekehotels.com/hotel-pier-bacalar/">Ver Hotel</a>
                 </div>
               </div>
               <div className="tour-type">
@@ -62,7 +63,7 @@ export default class HotelIndex extends React.Component {
                     Hotel a la orilla del mar con una impresionante playa que te hará sentir en un entorno 100% caribeño. En la mañana podrás relajarte, disfrutar un rico cóctel y nadar en el mar cristalino. Mientras que por la noche recorrerás las peculiares calles de la isla y degustar la gastronomía local. 
                   </p>
                   <span></span>
-                  <Link className="button has-text-white" to="tours">Ver Hotel</Link>
+                  <a target="_blank" rel="noopener noreferrer" className="button has-text-white" href="https://bekehotels.com/hotel-casa-maya-holbox/">Ver Hotel</a>
                 </div>
               </div>
             </div>
