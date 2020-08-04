@@ -31,42 +31,39 @@ export default class HotelIndex extends React.Component {
         </div>
         <section className="section">
           <div className="container">
-            <div className="animatable">
-              <div className="card-columns tour-type-container">
-                <a target="_blank" rel="noopener noreferrer" href="https://bekehotels.com/hotel-pier-bacalar/">
-                  <div className="card no-border" 
-                  style={{
-                    height: '700px',
-                    backgroundImage: `url(${pier})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                  >
-                    <div className="discount-overlay">
-                      <h4 className="title has-text-white has-text-centered">HOTEL PIER BACALAR – ALL INCLUSIVE</h4>
-                      <p className="has-text-white has-text-centered">
-                        Rodeado de naturaleza, estarás en un entorno de exclusividad lejos de todo lo cotidiano. Podrás disfrutar de la increíble laguna de Bacalar a unos cuantos pasos de tu habitación y por la noche gozarás del cielo estrellado como nunca antes lo habías visto. 
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <a target="_blank" rel="noopener noreferrer" href="https://bekehotels.com/hotel-casa-maya-holbox/">
-                  <div className="card no-border" 
-                    style={{
-                      height: '800px',
-                      backgroundImage: `url(${casaMaya})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                    }}
-                  >
-                    <div className="discount-overlay">
-                      <h4 className="title has-text-white has-text-centered">HOTEL CASA MAYA HOLBOX</h4>
-                      <p className="has-text-white has-text-centered">
-                        Hotel a la orilla del mar con una impresionante playa que te hará sentir en un entorno 100% caribeño. En la mañana podrás relajarte, disfrutar un rico cóctel y nadar en el mar cristalino. Mientras que por la noche recorrerás las peculiares calles de la isla y degustar la gastronomía local.
-                      </p>
-                    </div>
-                  </div>
-                </a>
+            <div className="tour-type-container">
+              <div className="tour-type ">
+                <Img className="tour-type-rounded" fluid={pier} />
+                <div className="overlay is-hidden-tablet" style={{backgroundColor: `#422e6a`}}>
+                  <span className="icon is-large">
+                    <i class="fas fa-3x fa-gopuram"></i>
+                  </span>
+                  <p>HOTEL PIER BACALAR – ALL INCLUSIVE</p>
+                </div>
+                <div className="content is-hidden-mobile">
+                  <h3 className="title">HOTEL PIER BACALAR – ALL INCLUSIVE</h3>
+                  <p className="description has-text-white has-text-justified">
+                    Rodeado de naturaleza, estarás en un entorno de exclusividad lejos de todo lo cotidiano. Podrás disfrutar de la increíble laguna de Bacalar a unos cuantos pasos de tu habitación y por la noche gozarás del cielo estrellado como nunca antes lo habías visto. 
+                  <span></span>
+                  <Link className="button has-text-white" to="tours">Ver Hotel</Link>
+                </div>
+              </div>
+              <div className="tour-type">
+                <Img className="tour-type-rounded" fluid={casaMaya} />
+                <div className="overlay is-hidden-tablet" style={{backgroundColor: `#eab92a`}}>
+                  <span className="icon is-large">
+                    <i class="fas fa-3x fa-water"></i>
+                  </span>
+                  <p>HOTEL CASA MAYA HOLBOX</p>
+                </div>
+                <div className="content is-hidden-mobile">
+                  <h3 className="title">HOTEL CASA MAYA HOLBOX</h3>
+                  <p className="description has-text-white has-text-justified">
+                    Hotel a la orilla del mar con una impresionante playa que te hará sentir en un entorno 100% caribeño. En la mañana podrás relajarte, disfrutar un rico cóctel y nadar en el mar cristalino. Mientras que por la noche recorrerás las peculiares calles de la isla y degustar la gastronomía local. 
+                  </p>
+                  <span></span>
+                  <Link className="button has-text-white" to="tours">Ver Hotel</Link>
+                </div>
               </div>
             </div>
           </div>
