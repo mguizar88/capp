@@ -3,7 +3,7 @@ import Layout from '../../components/Layout'
 
 import '../../components/index.sass'
 
-import chichen from '../../../static/img/chichen-itza.jpg'
+import chichen from '../../static/img/chichen-itza.jpg'
 
 export default class Nosotros extends React.Component {
   render() {
