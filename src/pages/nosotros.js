@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../../components/Layout'
+import Layout from '../components/Layout'
 
-import '../../components/index.sass'
+import '../components/index.sass'
 
 import chichen from '../../static/img/chichen-itza.jpg'
 
