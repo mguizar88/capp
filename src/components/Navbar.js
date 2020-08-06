@@ -58,13 +58,13 @@ const Navbar = class extends React.Component {
               className={`navbar-menu ${this.state.navBarActiveClass}`}
             >
               <div className="navbar-end flex-vertical-align has-text-centered">
-                <Link className="navbar-item secondary-links column-direction has-text-white" to="/about">
+                <Link className="navbar-item secondary-links column-direction has-text-white" to="/carrito">
                   <span className="icon is-small has-text-white">
                     <i className="fas fa-shopping-cart"></i>
                   </span>
                   Carrito
                 </Link>
-                <Link className="navbar-item secondary-links column-direction has-text-white" to="/contacto/">
+                <Link className="navbar-item secondary-links column-direction has-text-white" to="/contact/">
                   <span className="icon is-small has-text-white">
                     <i className="far fa-comments"></i>
                   </span>
@@ -110,13 +110,13 @@ const Navbar = class extends React.Component {
                 <Link className="navbar-item is-purple" to="/">
                   Inicio
                 </Link>
-                <Link className="navbar-item is-purple" to="/products">
+                <Link className="navbar-item is-purple" to="/hotels">
                   Hoteles
                 </Link>
-                <Link className="navbar-item is-purple" to="/blog">
+                <Link className="navbar-item is-purple" to="/transportacion">
                   Transportación
                 </Link>
-                <Link className="navbar-item is-purple" to="/contact">
+                <Link className="navbar-item is-purple" to="/circuitos">
                   Circuitos
                 </Link>
                 <Link className="navbar-item is-purple" to="/tours">
