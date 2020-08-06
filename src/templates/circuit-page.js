@@ -13,8 +13,7 @@ const CircuitTemplate = ({data}) => {
 	const title = data.markdownRemark.frontmatter.title
 	const img = data.markdownRemark.frontmatter.image
 	const description = frontmatter.description
-	const adults = frontmatter.price.adults_price
-	const children = frontmatter.price.children_price
+	
  
 	return(
 		<Layout>
@@ -129,12 +128,12 @@ const CircuitTemplate = ({data}) => {
 								<div className="column is-half">
 									<p className="t-yellow is-size-3 has-text-centered has-text-weight-bold">10%<span className="is-size-7">de descuento</span></p>
 									<p className="has-text-centered is-purple is-size-5 has-text-weight-bold">Adultos</p>
-									<p className="has-text-centered is-purple is-size-5 has-text-weight-bold">$ {adults} MXN</p>
+									<p className="has-text-centered is-purple is-size-5 has-text-weight-bold">$ MXN</p>
 								</div>
 								<div className="column is-half">
 								<p className="t-yellow is-size-3 has-text-centered has-text-weight-bold">0%<span className="is-size-7">de descuento</span></p>
 									<p className="has-text-centered is-purple is-size-5 has-text-weight-bold">Niños</p>
-									<p className="has-text-centered is-purple is-size-5 has-text-weight-bold">$ {children} MXN</p>
+									<p className="has-text-centered is-purple is-size-5 has-text-weight-bold">$ MXN</p>
 								</div>
 							</div>
 							<form>
