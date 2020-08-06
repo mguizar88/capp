@@ -58,7 +58,7 @@ export default class Index extends React.Component {
           </h1>
         </div>
         <section className="section">
-          <div style={{maxWidth: '768px',}}">
+          <div style={{maxWidth: '768px',}}>
             <p className="is-size-4-desktop">
               En CAPPTOUR, nos especializamos en una atención personalizada. Contáctanos por alguno de nuestros medios: Whatsapp, llamada, correo, Facebook, y un experto estará listo para ayudarte a vivir una experiencia inolvidable.
             </p>
