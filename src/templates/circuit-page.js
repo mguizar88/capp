@@ -13,7 +13,6 @@ const CircuitTemplate = ({data}) => {
 	const title = data.markdownRemark.frontmatter.title
 	const img = data.markdownRemark.frontmatter.image
 	const description = frontmatter.description
-	
  
 	return(
 		<Layout>
