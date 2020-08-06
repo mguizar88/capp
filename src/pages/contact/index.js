@@ -2,6 +2,8 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 
+import background from '../../../static/img/beach.jpg'
+
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -36,10 +38,52 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
+        <div
+          className="full-width-image-container margin-top-0"
+          style={{
+            backgroundImage: `url(${background})`,
+          }}
+        >
+          <h1
+            className="has-text-weight-bold is-size-1"
+            style={{
+              boxShadow: '0.5rem 0 0 #f1df0d, -0.5rem 0 0 #f1df0d',
+              backgroundColor: '#422e6a',
+              color: 'white',
+              padding: '1rem',
+              borderRadius: '0.5em',
+            }}
+          >
+            Contacto
+          </h1>
+        </div>
         <section className="section">
+          <div style={{maxWidth: '768px',}}">
+            <p className="is-size-4-desktop">
+              En CAPPTOUR, nos especializamos en una atención personalizada. Contáctanos por alguno de nuestros medios: Whatsapp, llamada, correo, Facebook, y un experto estará listo para ayudarte a vivir una experiencia inolvidable.
+            </p>
+            <p className="is-size-4-desktop">
+              Horarios:
+            </p>
+            <p className="is-size-4-desktop">
+              Lunes a Viernes: 9:00 – 21:00 <br/>
+              Sábado y Domingo : 10:00 – 18:00
+            </p>
+            <a className="is-size-4-desktop" href="mailto: contacto@capptour.com">
+              Correo : contacto@capptour.com
+            </a>
+            <p className="is-size-4-desktop">
+              Dirección
+            </p>
+            <p className="is-size-4-desktop">
+              Cancún, Quintana Roo – centro CP 77508
+            </p>
+            <p >
+              **No tenemos oficinas abiertas al público en general. Selecciona la forma de contacto de tu preferencia para contactarnos. 
+            </p>
+          </div>
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
               <form
                 name="contact"
                 method="post"
@@ -58,7 +102,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
-                    Your name
+                    Nombre
                   </label>
                   <div className="control">
                     <input
@@ -87,8 +131,23 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
+                  <label className="label" htmlFor={'tel'}>
+                    Teléfono
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'tel'}
+                      onChange={this.handleChange}
+                      id={'tel'}
+                      required={true}
+                    />
+                  </div>
+                </div>
+                <div className="field">
                   <label className="label" htmlFor={'message'}>
-                    Message
+                    Mensaje
                   </label>
                   <div className="control">
                     <textarea
@@ -99,6 +158,22 @@ export default class Index extends React.Component {
                       required={true}
                     />
                   </div>
+                </div>
+                <div class="field">
+                  <p class="control has-icons-left">
+                    <span class="select">
+                      <select>
+                        <option selected>Tipo de interés</option>
+                        <option>Tours</option>
+                        <option>Circuito</option>
+                        <option>Transportación</option>
+                        <option>Paquete vacacional</option>
+                      </select>
+                    </span>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                  </p>
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
