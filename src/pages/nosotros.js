@@ -60,7 +60,7 @@ export default class Nosotros extends React.Component {
               </p>
             </div>
             <div className="column is-half-desktop is-12-mobile">
-              <img src={price} alt="travel plans" />
+              <img src={prices} alt="travel plans" />
             </div>
           </div>
         </div>
