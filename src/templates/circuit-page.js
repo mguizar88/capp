@@ -197,7 +197,7 @@ const CircuitTemplate = ({data}) => {
 
 }
 
-export default TourComponent
+export default CircuitTemplate
 
 export const tourQuery = graphql`
 	query TourPage($id: String!){
