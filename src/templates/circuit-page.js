@@ -212,13 +212,7 @@ export const tourQuery = graphql`
 					}
 				}
 				description
-				price {
-		            adults_discount
-		            adults_price
-		            children_discount
-		            children_price
-		            q_price
-		        }
+				
 			}
 		}
 	}
