@@ -13,7 +13,6 @@ price:
   children_price: 800
   children_discount: 2
   adults_price: 800
-  adults_discount: ''
 tourType:
   - Acuatico
 ---
