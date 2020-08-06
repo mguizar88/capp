@@ -10,9 +10,9 @@ description: >-
   snorkelear y disfrutar de la vida marina; para finalizar en los manglares de
   Santa Paula, donde disfrutaremos de un ceviche.
 price:
-  children_price: 0
-  children_discount: -2
-  adults_price: 0
+  children_price: 800
+  children_discount: 2
+  adults_price: 800
   adults_discount: ''
 tourType:
   - Acuatico
