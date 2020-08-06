@@ -32,7 +32,7 @@ export default class Nosotros extends React.Component {
           </h1>
         </div>
         
-        <div style={{maxWidth: '768px',}} className="container">
+        <div className="container">
           <div className="columns is-vcentered">
             <div className="column is-half-desktop is-12-mobile">
               <p className="is-size-4-desktop">
