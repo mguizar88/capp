@@ -198,7 +198,7 @@ const CircuitTemplate = ({data}) => {
 export default CircuitTemplate
 
 export const circuitQuery = graphql`
-	query TourPage($id: String!){
+	query CircuitPage($id: String!){
 		markdownRemark(id: { eq: $id }) {
 			html
 			frontmatter {
