@@ -126,7 +126,7 @@ export const IndexPageTemplate = ({
                     Y nuestra última parada será "Bird Island", donde podrá disfrutar de la paz y la tranquilidad de la laguna y dependiendo de la temporada, 
                     es posible que también vea múltiples especies de aves.
                   </p>
-                  <button className="button">Ver Más</button>
+                  <Link to="/tours/bacalar-deluxe/" className="button">Ver Más</Link>
                 </div>     
               </div>
               <div className="carousel-item tour-card"
@@ -167,7 +167,7 @@ export const IndexPageTemplate = ({
                     • Isla pájaros; un santuario de aves en anidación.<br/>
                     • Isla pasión; un lugar con aguas azul multicolor y bancos de arena en donde usualmente llegan a alimentarse los flamingos.
                   </p>
-                  <button className="button">Ver Más</button>
+                  <Link to="/tours/holbox/" className="button">Ver Más</Link>
                 </div>
               </div>
               <div className="carousel-item tour-card"
@@ -208,7 +208,7 @@ export const IndexPageTemplate = ({
                     Posteriormente, hacemos una parada en los cuevones frente a Cabo Catoche para snorkelear y disfrutar de la vida marina; 
                     para finalizar en los manglares de Santa Paula, donde disfrutaremos de un ceviche.
                   </p>
-                  <button className="button">Ver Más</button>
+                  <Link to="tours/experiencia-tiburon-ballena/" className="button">Ver Más</Link>
                 </div>
               </div>
             </div>
