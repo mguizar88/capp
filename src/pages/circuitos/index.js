@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 const Circuits = ({
 	circuitsBackground,
-	{ edges: circuits } = circuits,
+	
 }) => (
   <Layout>
     <h1>Circuitos</h1>
@@ -17,7 +17,7 @@ export default class CircuitsPage extends React.Component {
 		return(
 			<Circuits
 				circuitsBackground={this.props.data.circuitsBackground}
-				circuits={this.props.data.allMarkdownRemark}
+				
 			/>
 		)
 	}
@@ -29,29 +29,6 @@ export const pageQuery = graphql`
       childImageSharp {
         fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "circuit-page" } } }
-    ) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            description
-            image {
-              childImageSharp {
-                fluid(maxWidth: 800, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
         }
       }
     }
