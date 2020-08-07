@@ -16,6 +16,7 @@ export default class Nosotros extends React.Component {
           className="full-width-image-container margin-top-0"
           style={{
             backgroundImage: `url(${chichen})`,
+            backgroundPosition: 'top',
           }}
         >
           <h1
@@ -35,8 +36,8 @@ export default class Nosotros extends React.Component {
         <div className="container">
           <div className="columns is-vcentered">
             <div className="column is-half-desktop is-12-mobile">
-              <p className="is-size-4-desktop">
-                CAPPTOUR , somos una tour operadora 100% mexicana especializada en la planeación, diseño y organización de tours y experiencias personalizadas, con el firme objetivo de asegurar a nuestros viajeros una experiencia única, placentera e inolvidable.
+              <p className="is-size-4-desktop has-text-justified">
+                CAPPTOUR, somos una tour operadora 100% mexicana especializada en la planeación, diseño y organización de tours y experiencias personalizadas, con el firme objetivo de asegurar a nuestros viajeros una experiencia única, placentera e inolvidable.
               </p>
             </div>
             <div className="column is-half-desktop is-12-mobile">
@@ -45,7 +46,7 @@ export default class Nosotros extends React.Component {
           </div>
           <div className="columns is-vcentered">
             <div className="column is-half-desktop is-12-mobile">
-              <p className="is-size-4-desktop">
+              <p className="is-size-4-desktop has-text-justified">
                 Nuestro servicio, está enfocado en proporcionar calidad y confiabilidad, a través de la atención de nuestro personal debidamente capacitado, garantizando viajes únicos, logrando superar las expectativas de nuestros viajeros. 
               </p>
             </div>
@@ -55,7 +56,7 @@ export default class Nosotros extends React.Component {
           </div>
           <div className="columns is-vcentered">
             <div className="column is-half-desktop is-12-mobile">
-              <p className="is-size-4-desktop">
+              <p className="is-size-4-desktop has-text-justified">
                 Brindando dentro de nuestros servicios, los mejores costos en hoteles, renta de autos, traslados; así como tours en todos los puntos de interés.
               </p>
             </div>
