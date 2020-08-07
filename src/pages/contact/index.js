@@ -42,6 +42,7 @@ export default class Index extends React.Component {
           className="full-width-image-container margin-top-0"
           style={{
             backgroundImage: `url(${background})`,
+            backgroundPosition: 'center',
           }}
         >
           <h1
@@ -59,26 +60,26 @@ export default class Index extends React.Component {
         </div>
         <section className="section">
           <div className="container has-text-centered">
-            <p className="is-size-4-desktop">
+            <p className="is-size-4-desktop mb-5">
               En CAPPTOUR, nos especializamos en una atención personalizada. Contáctanos por alguno de nuestros medios: Whatsapp, llamada, correo, Facebook, y un experto estará listo para ayudarte a vivir una experiencia inolvidable.
             </p>
             <p className="is-size-4-desktop">
               Horarios:
             </p>
-            <p className="is-size-4-desktop">
+            <p className="is-size-4-desktop mb-5">
               Lunes a Viernes: 9:00 – 21:00 <br/>
               Sábado y Domingo : 10:00 – 18:00
             </p>
-            <a className="is-size-4-desktop" href="mailto: contacto@capptour.com">
+            <a className="is-size-4-desktop mb-5" href="mailto: contacto@capptour.com">
               Correo : contacto@capptour.com
             </a>
             <p className="is-size-4-desktop">
               Dirección
             </p>
-            <p className="is-size-4-desktop">
+            <p className="is-size-4-desktop mb-5">
               Cancún, Quintana Roo – centro CP 77508
             </p>
-            <p >
+            <p className="mb-5">
               **No tenemos oficinas abiertas al público en general. Selecciona la forma de contacto de tu preferencia para contactarnos. 
             </p>
           </div>
