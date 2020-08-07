@@ -1,6 +1,6 @@
 ---
 templateKey: circuit-page
-title: Circuito Holbox – Valladolid
+title: Circuito Holbox Valladolid
 image: /img/circuito-holbox-valladolid.jpg
 description: >-
   En este circuito aprovecharás al máximo tu fin de semana visitando 2 de los
