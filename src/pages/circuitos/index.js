@@ -37,6 +37,20 @@ export const pageQuery = graphql`
     	edges {
 		node {
 			id
+			fields {
+				slug
+			}
+			frontmatter{
+				title
+				description
+				image {
+					childImageSharp{
+						fluid (maxWidth: 800, quality:100) {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
+			}
 		}
 	}
     }
