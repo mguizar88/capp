@@ -60,7 +60,7 @@ export default class Index extends React.Component {
         </div>
         <section className="section">
           <div className="container has-text-centered">
-            <p className="is-size-4-desktop mb-5">
+            <p className="is-size-4-desktop mb-5 has-text-justified">
               En CAPPTOUR, nos especializamos en una atención personalizada. Contáctanos por alguno de nuestros medios: Whatsapp, llamada, correo, Facebook, y un experto estará listo para ayudarte a vivir una experiencia inolvidable.
             </p>
             <p className="is-size-4-desktop">
