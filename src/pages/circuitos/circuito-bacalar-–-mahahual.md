@@ -1,6 +1,6 @@
 ---
 templateKey: circuit-page
-title: Circuito Bacalar – Mahahual
+title: Circuito Bacalar Mahahual
 image: /img/bacalar-mahahual.jpg
 description: >-
   En este circuito conocerás lo mejor del sur de Quintana Roo, la impresionante
