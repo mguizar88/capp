@@ -54,57 +54,62 @@ const Circuits = ({
 		<div className="column">
 		    <div className="tours-container">
 			{circuits &&
-			circuits.map(({ node: circuit }) => (
-			<div className="tour has-text-white" key={circuit.id}>
-			    <div className="relative tour-wrapper is-flex-tablet">
-				<div className="tour-image" style={{
-			    backgroundImage: `url(${
-				    !!circuit.frontmatter.image.childImageSharp ?circuit.frontmatter.image.childImageSharp.fluid.src : circuit.frontmatter.image
-				})`
-			    }}>
-				</div>
-				<div className="tour-info">
-				    <h3 className="title has-text-white is-size-4">
-					{ circuit.frontmatter.title }
-				    </h3>
-				    <p>
-					{ circuit.frontmatter.description }
-				    </p>
-				    <div className="indicators">
-					<div>
-					    <span>
-						<i className="fas fa-clock"></i>
-						<p>? horas</p>
-					    </span>
-					    <span>
-						<i className="fas fa-utensils"></i>
-					    </span>
-					    <span>
-						<i className="fas fa-shuttle-van"></i>
-					    </span>
-					    <span className="stars">
-						<i className="far fa-star"></i>
-						<i className="far fa-star"></i>
-						<i className="far fa-star"></i>
-						<i className="far fa-star"></i>
-					    </span>
+				circuits.map(({ node: circuit }) => (
+					<div className="tour has-text-white" key={circuit.id}>
+					    <div className="relative tour-wrapper is-flex-tablet">
+						<div className="tour-image" style={{
+						    backgroundImage: `url(${
+							!!circuit.frontmatter.image.childImageSharp ?circuit.frontmatter.image.childImageSharp.fluid.src : circuit.frontmatter.image
+						    })`
+						}}>
+						</div>
+						<div className="tour-info">
+						    <h3 className="title has-text-white is-size-4">
+							circuit.frontmatter.title
+						    </h3>
+						    <p>
+							circuit.frontmatter.description
+						    </p>
+						    <div className="indicators">
+							<div>
+							    <span>
+								<i className="fas fa-clock"></i>
+								<p>? horas</p>
+							    </span>
+							    <span>
+								<i className="fas fa-utensils"></i>
+							    </span>
+							    <span>
+								<i className="fas fa-shuttle-van"></i>
+							    </span>
+							    <span className="stars">
+								<i className="far fa-star"></i>
+								<i className="far fa-star"></i>
+								<i className="far fa-star"></i>
+								<i className="far fa-star"></i>
+							    </span>
+							</div>
+							<div className="price ">
+							    <p className="is-size-3 has-text-right">
+								<span>desde</span>
+								$
+							    </p>
+							    <Link 
+								to={circuit.fields.slug} 
+								className="button is-rounded" 
+								style={{
+								    backgroundColor: 'rgb(234, 185, 42)'
+								}}
+							    >
+								Detalles
+							    </Link>
+							</div>
+						    </div>
+						</div>
+					    </div>
 					</div>
-					<div className="price ">
-					    <p className="is-size-3 has-text-right">
-						<span>desde</span>
-						$
-					    </p>
-					    <Link to={circuit.fields.slug} className="button is-rounded" style={{
-				    backgroundColor: 'rgb(234, 185, 42)'
-				}}>
-					    Detalles
-					    </Link>
-					</div>
-				    </div>
-				</div>
-			    </div>
-			</div>
-			))}
+				))
+			}
 		    </div>
 
 		    <nav className="pagination is-centered" role="navigation" aria-label="pagination">
@@ -132,7 +137,7 @@ export default class CircuitsPage extends React.Component {
 		return(
 			<Circuits
 				circuitsBackground={this.props.data.circuitsBackground}
-				circuits={this.props.data.allMarkdownRemark}
+				circuits={this.props.data.allMarkdownRemark.edges}
 			/>
 		)
 	}
