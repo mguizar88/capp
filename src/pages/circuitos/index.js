@@ -65,10 +65,10 @@ const Circuits = ({
 						</div>
 						<div className="tour-info">
 						    <h3 className="title has-text-white is-size-4">
-							circuit.frontmatter.title
+							{ circuit.frontmatter.title }
 						    </h3>
 						    <p>
-							circuit.frontmatter.description
+							{ circuit.frontmatter.description }
 						    </p>
 						    <div className="indicators">
 							<div>
@@ -90,10 +90,6 @@ const Circuits = ({
 							    </span>
 							</div>
 							<div className="price ">
-							    <p className="is-size-3 has-text-right">
-								<span>desde</span>
-								$
-							    </p>
 							    <Link 
 								to={circuit.fields.slug} 
 								className="button is-rounded" 
