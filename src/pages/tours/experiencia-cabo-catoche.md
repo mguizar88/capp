@@ -12,7 +12,7 @@ price:
   adults_price: 0
   children_price: 0
 tourType:
-  - acuaticos
+  - acuatico
 ---
 "Punto exacto donde el mar caribe y el Golfo de México se conjuntan. Sorprendentes paisajes de playas vírgenes además de una exuberante vida marina, razón por la que snorkelear y pescar son de las mejores experiencias. Podremos encontrar peces de tamaño regular, con los que prepararemos un delicioso ceviche.
 
