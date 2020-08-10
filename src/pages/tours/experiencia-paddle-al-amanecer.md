@@ -12,7 +12,7 @@ price:
   adults_price: 0
   children_price: 0
 tourType:
-  - acuaticos
+  - acuatico
 ---
 "Nuestro guía le dará la bienvenida en nuestro punto de partida, le explicarán las reglas de seguridad para esta actividad y los conceptos básicos para el stand up paddle, no importa si es la primera vez que realiza esta actividad, lo guiaremos a través de toda la experiencia asegurándose Siempre estás seguro y cómodo.
 
