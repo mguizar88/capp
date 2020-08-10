@@ -5,9 +5,7 @@ import Img from "gatsby-image"
 
 const Tours = ({
 	toursBack,
-	tulumImage,
-	bacalar,
-	holbox,
+	tours
 }) => (
   <Layout>
     <div>
@@ -85,22 +83,6 @@ const Tours = ({
 	                <Link className="filter-links has-text-white has-text-left" to="/about">
 	                  Apto para todo público (5)
 	                </Link>
-	                <h3 className="title has-text-white">Precios</h3>
-					<Link className="filter-links has-text-white has-text-left" to="/about">
-	                  $ 0 - $500
-	                </Link>
-	                <Link className="filter-links has-text-white has-text-left" to="/about">
-	                  $500 - $900
-	                </Link>
-	                <Link className="filter-links has-text-white has-text-left" to="/about">
-	                  $950 - $2000
-	                </Link>
-	                <Link className="filter-links has-text-white has-text-left" to="/about">
-	                  $2000 - $5000
-	                </Link>
-	                <Link className="filter-links has-text-white has-text-left" to="/about">
-	                  $5000 - $10,000
-	                </Link>
 	                <h3 className="title has-text-white">Populares</h3>
 					<Link className="filter-links has-text-white has-text-left" to="/about">
 	                  Tours culturales y temáticos (8)
@@ -153,171 +135,53 @@ const Tours = ({
 					    </div>
 					</div>
 					<div className="tours-container">
-						<div className="tour has-text-white">
-							<div className="relative tour-wrapper is-flex-tablet">
-								<div className="tour-image"
-									style={{
-										backgroundImage: `url(${
-								          !!tulumImage.childImageSharp ? tulumImage.childImageSharp.fluid.src : tulumImage
-								        })`
-									}}
-								>
-								</div>
-								<div className="tour-info">
-									<h3 className="title has-text-white is-size-4">
-										Experiencia Isla Mujeres
-									</h3>
-									<p>
-										Salida de Cancún en diferentes horarios la capacidad máxima es de 15 personas. El tour tiene una duración de 6 horas, se rodea la Isla, se hace una breve visita por fuera del parque Garrafón para estar en contacto con las especies que habitan esta área. Posteriormente se visita la playa punta norte, catalogada como una de las mejores playas en el mundo.	
-									</p>
-									<div className="indicators">
-										<div>
-											<span>
-						                      <i className="fas fa-clock"></i>
-						                      <p>6 horas</p>
-						                    </span>
-						                    <span>
-						                      <i className="fas fa-utensils"></i>
-						                    </span>
-						                    <span>
-						                      <i className="fas fa-shuttle-van"></i>
-						                    </span>
-						                    <span className="stars">
-						                      <i className="far fa-star"></i>
-						                      <i className="far fa-star"></i>
-						                      <i className="far fa-star"></i>
-						                      <i className="far fa-star"></i>
-						                    </span>
-					                    </div>
-					                    <div className="price ">
-					                    	<p className="is-size-3 has-text-right">
-					                    		<span>desde</span>
-					                    		$120
-					                    	</p>
-											<Link 
-												to="/tours/experiencia-isla-mujeres/"
-												className="button is-rounded"
-												style={{
-													backgroundColor: 'rgb(234, 185, 42)'
-												}}
-											>
-					                    		Detalles
-					                    	</Link>
-					                    </div>
+						{tours &&
+							tours.map(({ node: tour }) => (
+								<div className="tour has-text-white" key={tour.id}>
+								    <div className="relative tour-wrapper is-flex-tablet">
+									<div className="tour-image" style={{
+									    backgroundImage: `url(${
+										!!tour.frontmatter.image.childImageSharp ?tour.frontmatter.image.childImageSharp.fluid.src : tour.frontmatter.image
+									    })`
+									}}>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div className="tour has-text-white">
-							<div className="relative tour-wrapper is-flex-tablet">
-								<div className="tour-image"
-									style={{
-										backgroundImage: `url(${
-								          !!holbox.childImageSharp ? holbox.childImageSharp.fluid.src : holbox
-								        })`
-									}}
-								>
-								</div>
-								<div className="tour-info">
-									<h3 className="title has-text-white is-size-4">
-										Holbox
-									</h3>
-									<p>
-										El recorrido clásico dura tres horas, es un paseo en bote, visitas tres puntos de la hermosa isla de Holbox, que son: la isla de los pájaros, que encuentra innumerables aves, como el pelícano gris, la garceta, los cormoranes, etc. 
-									</p>
-									<div className="indicators">
+									<div className="tour-info">
+									    <h3 className="title has-text-white is-size-4">
+										{ tour.frontmatter.title }
+									    </h3>
+									    <p>
+										{ tour.frontmatter.description }
+									    </p>
+									    <div className="indicators">
 										<div>
-											<span>
-						                      <i className="fas fa-clock"></i>
-						                      <p>6 horas</p>
-						                    </span>
-						                    <span>
-						                      <i className="fas fa-utensils"></i>
-						                    </span>
-						                    <span>
-						                      <i className="fas fa-shuttle-van"></i>
-						                    </span>
-						                    <span className="stars">
-						                      <i className="far fa-star"></i>
-						                      <i className="far fa-star"></i>
-						                      <i className="far fa-star"></i>
-						                      <i className="far fa-star"></i>
-						                    </span>
-					                    </div>
-					                    <div className="price ">
-					                    	<p className="is-size-3 has-text-right">
-					                    		<span>desde</span>
-					                    		$
-					                    	</p>
-											<Link 
-												to="/tours/holbox/"
-												className="button is-rounded"
-												style={{
-													backgroundColor: 'rgb(234, 185, 42)'
-												}}
-											>
-					                    		Detalles
-					                    	</Link>
-					                    </div>
+										    <span>
+											<i className="fas fa-clock"></i>
+											<p>? horas</p>
+										    </span>
+										    <span className="stars">
+											<i className="far fa-star"></i>
+											<i className="far fa-star"></i>
+											<i className="far fa-star"></i>
+											<i className="far fa-star"></i>
+										    </span>
+										</div>
+										<div className="price ">
+										    <Link 
+											to={tour.fields.slug} 
+											className="button is-rounded" 
+											style={{
+											    backgroundColor: 'rgb(234, 185, 42)'
+											}}
+										    >
+											Detalles
+										    </Link>
+										</div>
+									    </div>
 									</div>
+								    </div>
 								</div>
-							</div>
-						</div>
-						<div className="tour has-text-white">
-							<div className="relative tour-wrapper is-flex-tablet">
-								<div className="tour-image"
-									style={{
-										backgroundImage: `url(${
-								          !!bacalar.childImageSharp ? bacalar.childImageSharp.fluid.src : bacalar
-								        })`
-									}}
-								>
-								</div>
-								<div className="tour-info">
-									<h3 className="title has-text-white is-size-4">
-										Bacalar Deluxe
-									</h3>
-									<p>
-										Conocerás a nuestro equipo en la marina, donde recibirás instrucciones para prepararte a la aventura de 4 horas.	
-									</p>
-									<div className="indicators">
-										<div>
-											<span>
-						                      <i className="fas fa-clock"></i>
-						                      <p>6 horas</p>
-						                    </span>
-						                    <span>
-						                      <i className="fas fa-utensils"></i>
-						                    </span>
-						                    <span>
-						                      <i className="fas fa-shuttle-van"></i>
-						                    </span>
-						                    <span className="stars">
-						                      <i className="far fa-star"></i>
-						                      <i className="far fa-star"></i>
-						                      <i className="far fa-star"></i>
-						                      <i className="far fa-star"></i>
-						                    </span>
-					                    </div>
-					                    <div className="price ">
-					                    	<p className="is-size-3 has-text-right">
-					                    		<span>desde</span>
-					                    		$800
-					                    	</p>
-											<Link 
-												to="/tours/bacalar-deluxe/"
-												className="button is-rounded"
-												style={{
-													backgroundColor: 'rgb(234, 185, 42)'
-												}}
-											>
-					                    		Detalles
-					                    	</Link>
-					                    </div>
-									</div>
-								</div>
-							</div>
-						</div>
+							))
+						}
 					</div>
 					<nav className="pagination is-centered" role="navigation" aria-label="pagination">
 					  <a href="#" className="pagination-previous">Previous</a>
@@ -344,9 +208,7 @@ export default class ToursPage extends React.Component {
 		return(
 			<Tours 
 				toursBack={this.props.data.toursBack}
-				tulumImage={this.props.data.tulum}
-				bacalar={this.props.data.bacalar}
-				holbox={this.props.data.holbox}
+				tours={this.props.data.allMarkdownRemark.edges}
 			/>
 		)
 	}
@@ -361,26 +223,26 @@ export const pageQuery = graphql`
         }
       }
     }
-    tulum: file(relativePath: { eq: "isla-mujeres.jpg" }){
-      childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    bacalar: file(relativePath: { eq: "bacalar.jpeg" }){
-      childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    holbox: file(relativePath: { eq: "holbox.jpeg" }){
-      childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+    allMarkdownRemark (filter: {frontmatter: {templateKey: {eq: "tour-page"}}}) {
+    	edges {
+		node {
+			id
+			fields {
+				slug
+			}
+			frontmatter{
+				title
+				description
+				image {
+					childImageSharp{
+						fluid (maxWidth: 800, quality:100) {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
+			}
+		}
+	}
     }
   }
 `
