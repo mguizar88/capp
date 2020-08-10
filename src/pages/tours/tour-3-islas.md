@@ -11,7 +11,7 @@ price:
   adults_price: 0
   children_price: 0
 tourType:
-  - acuaticos
+  - acuatico
 ---
 "Recorre en lancha 3 de los lugares más populares de Holbox: 
 • Yalahau un ojo de agua dulce en el cual podrás tomar un relajante baño.
