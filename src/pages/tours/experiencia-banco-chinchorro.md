@@ -12,7 +12,7 @@ price:
   adults_price: 0
   children_price: 0
 tourType:
-  - acuaticos
+  - acuatico
 ---
 "El tour de snorkel o buceo a banco Chinchorro cuenta con dos
 paradas para hacer snorkel o bucear y una visita a Cayo Centro,
