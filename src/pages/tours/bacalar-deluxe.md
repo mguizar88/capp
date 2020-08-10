@@ -7,7 +7,7 @@ price:
   adults_price: 800
   children_price: 500
 tourType:
-  - Acuatico
+  - acuatico
 ---
 BACALAR DELUXE Conocerás a nuestro equipo en la marina, donde recibirás instrucciones para prepararte a la aventura de 4 horas. 🚤🌊
 
