@@ -32,7 +32,7 @@ export default class HotelIndex extends React.Component {
         <div
           className="alert"
           style={{
-            padding: 1rem,
+            padding: '1rem',
             backgroundColor: '#eab92a',
           }}
         >
