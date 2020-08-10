@@ -1,9 +1,9 @@
 import React from 'react'
-import Layout from '../../components/Layout'
+import Layout from '../components/Layout'
 import { Link, graphql } from 'gatsby'
 import Img from "gatsby-image"
 
-const Tours = ({
+const CulturalTours = ({
 	toursBack,
 	tours
 }) => (
@@ -172,10 +172,10 @@ const Tours = ({
   </Layout>
 )
 
-export default class ToursPage extends React.Component {
+export default class CulturalToursPage extends React.Component {
 	render() {
 		return(
-			<Tours 
+			<CulturalTours 
 				toursBack={this.props.data.toursBack}
 				tours={this.props.data.allMarkdownRemark.edges}
 			/>
