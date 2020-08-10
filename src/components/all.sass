@@ -97,6 +97,39 @@ input, select, textarea
 .home-carousel
   padding: 50px 0 50px 0
 
+::-webkit-scrollbar 
+  width: 6px
+  height: 6px
+
+::-webkit-scrollbar-button 
+  width: 0px
+  height: 0px
+
+::-webkit-scrollbar-thumb 
+  background: #e1e1e1
+  border: 0px none #ffffff
+  border-radius: 16px
+
+::-webkit-scrollbar-thumb:hover 
+  background: #ffffff
+
+::-webkit-scrollbar-thumb:active 
+  background: #000000
+
+::-webkit-scrollbar-track 
+  background: #666666
+  border: 0px none #ffffff
+  border-radius: 90px
+
+::-webkit-scrollbar-track:hover 
+  background: #666666
+
+::-webkit-scrollbar-track:active 
+  background: #333333
+
+::-webkit-scrollbar-corner 
+  background: transparent
+  
 //tour-card
 .tour-card
   position: relative
@@ -131,6 +164,7 @@ input, select, textarea
 .tour
   border-radius: 20px
   margin: 6rem 0
+  height: 350px
   &:first-child
     margin-top: 4rem
   .tour-wrapper
