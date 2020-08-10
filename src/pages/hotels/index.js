@@ -29,18 +29,18 @@ export default class HotelIndex extends React.Component {
             Hoteles
           </h1>
         </div>
-        
+        <div
+          className="alert"
+          style={{
+            padding: 1rem,
+            backgroundColor: '#eab92a',
+          }}
+        >
+          <p className="has-text-white has-text-centered">
+            Te invitamos a conocer nuestra familia de hoteles: <a target="_blank" rel="noopener noreferrer" href="https://bekehotels.com/"> www.bekehotels.com</a>
+          </p>
+        </div>
         <div className="container">
-          <div
-            className="py-3"
-            style={{
-              backgroundColor: '#eab92a',
-            }}
-          >
-            <p className="has-text-white has-text-centered">
-              Te invitamos a conocer nuestra familia de hoteles: <a target="_blank" rel="noopener noreferrer" href="https://bekehotels.com/"> www.bekehotels.com</a>
-            </p>
-          </div>
           <div style={{maxWidth: '900px'}} className="tour-type-container">
             <div className="tour-type ">
               <img className="tour-type-rounded" src={hoteles} />
