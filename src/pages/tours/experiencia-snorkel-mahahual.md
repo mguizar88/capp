@@ -9,7 +9,7 @@ price:
   adults_price: 0
   children_price: 0
 tourType:
-  - acuaticos
+  - acuatico
 ---
 Nadaremos en el segundo arrecife más grande del mundo
 donde podrás apreciar una gran cantidad de vida marina
