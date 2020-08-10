@@ -103,7 +103,7 @@ export const IndexPageTemplate = ({
                   <div className="indicators">
                     <span>
                       <i className="fas fa-clock"></i>
-                      <p>6 horas</p>
+                      <p>3.5 - 4 horas</p>
                     </span>
                     <span>
                       <i className="fas fa-utensils"></i>
@@ -143,7 +143,7 @@ export const IndexPageTemplate = ({
                   <div className="indicators">
                     <span>
                       <i className="fas fa-clock"></i>
-                      <p>6 horas</p>
+                      <p>3 horas</p>
                     </span>
                     <span>
                       <i className="fas fa-utensils"></i>
