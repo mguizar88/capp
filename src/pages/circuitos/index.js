@@ -26,21 +26,7 @@ const Circuits = ({
 			alignItems: 'center',
 			flexDirection: 'row',
 		    }}>
-		    <form className="searcher"
-			style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between',}}>
-			<input className="input is-large" type="text" placeholder="¿A dónde viajas?" />
-			<div className="control">
-			    <div className="select is-large">
-				<select className="is-hovered">
-				    <option>Tipo de tour</option>
-				    <option>With options</option>
-				</select>
-			    </div>
-			</div>
-			<input className="input is-large" type="date" placeholder="Fecha" />
-			<input className="button is-large" style={{backgroundColor: '#eab92a', color: '#fff'}} type="submit"
-			    value="Buscar" />
-		    </form>
+		    <h1 className="has-text-white">Circuitos</h1>
 		</div>
 	    </div>
 	</div>
