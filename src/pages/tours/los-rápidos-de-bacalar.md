@@ -10,7 +10,7 @@ price:
   adults_price: 0
   children_price: 0
 tourType:
-  - acuaticos
+  - acuatico
 ---
 "Los rapidos de bacalar es uno de esos lugares que no
 puedes irte sin descubrir una zona en que la laguna, una
