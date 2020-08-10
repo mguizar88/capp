@@ -14,6 +14,6 @@ price:
   children_discount: 2
   adults_price: 800
 tourType:
-  - Acuatico
+  - acuatico
 ---
 De junio a septiembre, te ofrecemos una experiencia en donde podrás nadar y hacer snorkel con el tiburón ballena en su hábitat natural. En este tour llegamos, a Cabo Catoche para ver al tiburón ballena y nadar junto a él. Posteriormente, hacemos una parada en los cuevones frente a Cabo Catoche para snorkelear y disfrutar de la vida marina; para finalizar en los manglares de Santa Paula, donde disfrutaremos de un ceviche.
