@@ -11,7 +11,7 @@ price:
   adults_price: 0
   children_price: 0
 tourType:
-  - Cultural
+  - cultural
 ---
 "Fenómeno que ocurre en las Playas del sur de la Isla y
 se puede observar cuando no existe la luz de la luna
