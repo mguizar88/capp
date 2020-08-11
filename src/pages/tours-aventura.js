@@ -141,7 +141,7 @@ const AdventureTours = ({
 										<div>
 										    <span>
 											<i className="fas fa-clock"></i>
-											<p>? horas</p>
+											<p>{tour.frontmatter.schedule}</p>
 										    </span>
 									    	    {	
 											tour.frontmatter.food ?
