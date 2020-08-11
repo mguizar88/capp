@@ -15,6 +15,31 @@ price:
   children_price: 0
 tourType:
   - aventura
+schedule: 6.5 horas.
+includes: >-
+  • Equipo: Casco, Googles, 1 vehículo Polaris para 2 personas, 1 canoa para 2 o
+  3 personas &amp;, chaleco salvavidas.
+
+  • Guía especializado.
+
+  • Lockers (casilleros).
+
+  • Snack y agua.
+
+  • Piscina.
+
+  • Comida en Palapa Principal.
+recommendations: >-
+  - Zapatos con calcetines (tenis o botines) tomar en cuenta que los zapatos se
+  ensuciarán en los senderos.
+
+  - Toalla.
+
+  - Sombrero o gorra.
+
+  - Repelente biodegradable.
+info: 'Horarios de entrada 9:00 am y 13:00 pm.'
+food: true
 ---
 "El tour wild es el más completo de Nativa. Se recorren 10.5 km de selva maya en un vehículo todo terreno, lo cual te permite disfrutar de la belleza de la jungla de una manera segura y tranquila; también se conoce un museo histórico y natural ubicado en medio de ésta selva, el cual trata de la flora, fauna, historia y cultura de los mayas así como de los habitantes de la región. Recreamos un campamento chiclero, ya que el chicle fue de gran importancia para los antiguos mayas, por lo tanto, nuestros visitantes conocerán acerca de su proceso de obtención y el uso que se le daba.
 • Tendrán la oportunidad de conocer una “Casa Maya”, y aprenderán a hacer tortillas y frijoles de la manera tradicional. En el patio (jardín) de la casa encontrarán un Museo Natural Interactivo, con maderas, insectos, frutos y huellas de animales de la zona.
