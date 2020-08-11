@@ -3,17 +3,25 @@ templateKey: tour-page
 title: Experiencia bioluminiscencia
 image: /img/bio.jpg
 description: >-
-  "Fenómeno que ocurre en las Playas del sur de la isla de Holbox y se puede
+  Fenómeno que ocurre en las Playas del sur de la isla de Holbox y se puede
   observar cuando no existe la luz de la luna en la noche, en donde las aguas de
   la orilla del mar quedan iluminadas por ciertos microorganismos que se
-  iluminan al chocar con las olas.  "
+  iluminan al chocar con las olas. 
 price:
   adults_price: 0
   children_price: 0
 tourType:
   - cultural
+schedule: 75 min.
+includes: |-
+  • Taxi de ida y vuelta (carrito de golf).
+  • Guía.
+  • Binoculares nocturnos.
+info: |-
+  Idiomas disponibles: Españo e Ingles.
+  El Horario de entrada varia dependiendo de la fase lunar.
 ---
-"Fenómeno que ocurre en las Playas del sur de la Isla y
+Fenómeno que ocurre en las Playas del sur de la Isla y
 se puede observar cuando no existe la luz de la luna
 en la noche.
 Es un fenómeno espectacular donde las aguas de la
@@ -21,4 +29,4 @@ orilla del mar quedan iluminadas por ciertos
 microorganismos que se iluminan al chocar con las
 olas.
 
-Te llevamos en un carrito de golf a la bahía de Punta Cocos, en donde podrás disfrutar del plankton rodeando tu cuerpo e iluminando cada paso o movimiento."
+Te llevamos en un carrito de golf a la bahía de Punta Cocos, en donde podrás disfrutar del plankton rodeando tu cuerpo e iluminando cada paso o movimiento.
