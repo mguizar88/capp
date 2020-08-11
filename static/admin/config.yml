@@ -87,10 +87,10 @@ collections:
       - {label: "Includes", name: "includes", widget: "text", required: false}
       - {label: "Recommendations", name: "recommendations", widget: "text", required: false}
       - {label: "Info", name: "info", widget: "text", required: false}
-      - {label: "Food", name: "food", widget: "boolean", default: false}
-      - {label: "Transportation", name: "transportation", widget: "boolean", default: false}
-      - {label: "Life vest", name: "vest", widget: "boolean", default: false}
-      - {label: "Snorkel", name: "snorkel", widget: "boolean", default: false}
+      - {label: "Food", name: "food", widget: "boolean", default: false, required: false}
+      - {label: "Transportation", name: "transportation", widget: "boolean", default: false, required: false}
+      - {label: "Life vest", name: "vest", widget: "boolean", default: false, required: false}
+      - {label: "Snorkel", name: "snorkel", widget: "boolean", default: false, required: false}
       
   - name: "circuitos"
     label: "Circuitos"
@@ -109,10 +109,10 @@ collections:
       - {label: "Includes", name: "includes", widget: "text", required: false}
       - {label: "Recommendations", name: "recommendations", widget: "text", required: false}
       - {label: "Info", name: "info", widget: "text", required: false}
-      - {label: "Food", name: "food", widget: "boolean", default: false}
-      - {label: "Transportation", name: "transportation", widget: "boolean", default: false}
-      - {label: "Life vest", name: "vest", widget: "boolean", default: false}
-      - {label: "Snorkel", name: "snorkel", widget: "boolean", default: false}
+      - {label: "Food", name: "food", widget: "boolean", default: false, required: false}
+      - {label: "Transportation", name: "transportation", widget: "boolean", default: false, required: false}
+      - {label: "Life vest", name: "vest", widget: "boolean", default: false, required: false}
+      - {label: "Snorkel", name: "snorkel", widget: "boolean", default: false, required: false}
    
 
 
