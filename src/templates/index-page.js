@@ -126,7 +126,7 @@ export const IndexPageTemplate = ({
                     Y nuestra última parada será "Bird Island", donde podrá disfrutar de la paz y la tranquilidad de la laguna y dependiendo de la temporada, 
                     es posible que también vea múltiples especies de aves.
                   </p>
-                  <Link to="/tours/bacalar-deluxe/" className="button">Ver Más</Link>
+                  <Link to="/tours/tour-de-la-laguna-de-7-colores-de-bacalar/" className="button">Ver Más</Link>
                 </div>     
               </div>
               <div className="carousel-item tour-card"
@@ -167,7 +167,7 @@ export const IndexPageTemplate = ({
                     • Isla pájaros; un santuario de aves en anidación.<br/>
                     • Isla pasión; un lugar con aguas azul multicolor y bancos de arena en donde usualmente llegan a alimentarse los flamingos.
                   </p>
-                  <Link to="/tours/holbox/" className="button">Ver Más</Link>
+                  <Link to="/tours/tour-3-islas/" className="button">Ver Más</Link>
                 </div>
               </div>
               <div className="carousel-item tour-card"
@@ -208,7 +208,7 @@ export const IndexPageTemplate = ({
                     Posteriormente, hacemos una parada en los cuevones frente a Cabo Catoche para snorkelear y disfrutar de la vida marina; 
                     para finalizar en los manglares de Santa Paula, donde disfrutaremos de un ceviche.
                   </p>
-                  <Link to="tours/experiencia-tiburon-ballena/" className="button">Ver Más</Link>
+                  <Link to="/tours/experiencia-tiburón-ballena/" className="button">Ver Más</Link>
                 </div>
               </div>
             </div>
@@ -251,7 +251,7 @@ export const IndexPageTemplate = ({
                   y afectivos que caracterizan a un destino específico.
                 </p>
                 <span></span>
-                <Link className="button has-text-white" to="tours">Ver Tours</Link>
+                <Link className="button has-text-white" to="tours-culturales">Ver Tours</Link>
               </div>
             </div>
             <div className="tour-type">
@@ -269,7 +269,7 @@ export const IndexPageTemplate = ({
                   para los amantes de la práctica de actividades acuáticas como: buceo, snorkel, pesca, nado con delfines, paseos con en barco, entre otros. 
                 </p>
                 <span></span>
-                <Link className="button has-text-white" to="tours">Ver Tours</Link>
+                <Link className="button has-text-white" to="tours-acuaticos">Ver Tours</Link>
               </div>
             </div>
             <div className="tour-type">
@@ -288,7 +288,7 @@ export const IndexPageTemplate = ({
                   con experiencias de liberación física y esparcimiento en la naturaleza. 
                 </p>
                 <span></span>
-                <Link className="button has-text-white" to="tours">Ver Tours</Link>
+                <Link className="button has-text-white" to="tours-aventura">Ver Tours</Link>
               </div>
             </div>
           </div>
