@@ -26,7 +26,7 @@ const TourComponent = ({data}) => {
 	const childs = frontmatter.childs
 	const underAge = frontmatter.underAge
 	const includes = frontmatter.includes
-	const recommendations = recommendations
+	const recommendations = frontmatter.recommendations
 	const info = frontmatter.info
  
 	return(
