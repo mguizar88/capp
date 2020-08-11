@@ -13,8 +13,13 @@ const CircuitTemplate = ({data}) => {
 	const title = data.markdownRemark.frontmatter.title
 	const img = data.markdownRemark.frontmatter.image
 	const description = frontmatter.description
-  const adults = frontmatter.price.adults_price
+  	const adults = frontmatter.price.adults_price
 	const children = frontmatter.price.children_price
+	const childs = frontmatter.childs
+	const underAge = frontmatter.underAge
+	const includes = frontmatter.includes
+	const recommendations = recommendations
+	const info = frontmatter.info
   
 	return(
 		<Layout>
@@ -37,40 +42,37 @@ const CircuitTemplate = ({data}) => {
 									{description}
 								</p>
 								<div className="columns" style={{marginTop: '2.1rem'}}>
-									<div className="column is-one-third has-text-centered">
-										<span>
-										  <i className=" is-purple far fa-7x fa-clock"></i>
-										</span>
-										<p className="is-purple" style={{fontSize: '26px', fontWeight: 'bold', margin: '1rem 0'}}>
-											Horarios
-										</p>
-										<p>
-											Lorem ipsum dolor sit amet vum
-										</p>
-									</div>
-									<div className="column is-one-third has-text-centered">
-										<span>
-										  <i className="is-purple fas fa-7x fa-child"></i>
-										</span>
-										<p className="is-purple" style={{fontSize: '26px', fontWeight: 'bold', margin: '1rem 0'}}>
-											Menores
-										</p>
-										<p>
-											Lorem ipsum dolor sit amet vum
-										</p>
-									</div>
-									<div className="column is-one-third has-text-centered">
-										<span>
-										  <i className="is-purple fas fa-7x fa-child"></i>
-										  <i className="is-purple fas fa-7x fa-female"></i>
-										</span>
-										<p className="is-purple" style={{fontSize: '26px', fontWeight: 'bold', margin: '1rem 0'}}>
-											Niños
-										</p>
-										<p>
-											Lorem ipsum dolor sit amet vum
-										</p>
-									</div>
+									{
+										underAge?
+											<div className="column is-one-third has-text-centered">
+												<span>
+												  <i className="is-purple fas fa-7x fa-child"></i>
+												</span>
+												<p className="is-purple" style={{fontSize: '26px', fontWeight: 'bold', margin: '1rem 0'}}>
+													Menores
+												</p>
+												<p>
+													{ underAge }
+												</p>
+											</div>
+										: ''
+									}
+									{
+										childs?
+											<div className="column is-one-third has-text-centered">
+												<span>
+												  <i className="is-purple fas fa-7x fa-child"></i>
+												  <i className="is-purple fas fa-7x fa-female"></i>
+												</span>
+												<p className="is-purple" style={{fontSize: '26px', fontWeight: 'bold', margin: '1rem 0'}}>
+													Niños
+												</p>
+												<p>
+													{ childs }
+												</p>
+											</div>
+										: ''
+									}
 								</div>
 							</div>
 
@@ -88,34 +90,13 @@ const CircuitTemplate = ({data}) => {
 
 							<div className="tab-content" id="pills-tabContent">
 							  <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-							  	<ul>
-							  		<li>
-							  			<p>
-							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Ut labore et dolore magna aliqua. Quis ipsum suspendisse.
-							  			</p>
-							  		</li>
-							  		<li>
-							  			<p>
-							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Ut labore et dolore magna aliqua. Quis ipsum suspendisse.
-							  			</p>
-							  		</li>
-							  		<li>
-							  			<p>
-							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Ut labore et dolore magna aliqua. Quis ipsum suspendisse.
-							  			</p>
-							  		</li>
-							  		<li>
-							  			<p>
-							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Ut labore et dolore magna aliqua. Quis ipsum suspendisse.
-							  			</p>
-							  		</li>
-							  	</ul>
+							  	{ includes }
 							  </div>
 							  <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-							  	...
+							  	{ recommendations }
 							  </div>
 							  <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-							  	...
+							  	{ info }
 							  </div>
 							</div>	
 
@@ -213,6 +194,11 @@ export const circuitQuery = graphql`
 					}
 				}
 				description
+				childs
+				underAge
+				includes
+				recommendations
+				info
 				price {
 		      adults_price
 		      children_price
