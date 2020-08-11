@@ -13,6 +13,25 @@ price:
   children_price: 0
 tourType:
   - acuatico
+schedule: 9 horas.
+includes: |-
+  • Equipo de snorkel.
+  • Equipo de buceo.
+recommendations: |-
+  8.30 – 9.00 AM : salida de Mahahual
+  10.30 : llegan a Chinchorro
+  10.45 : primer buceo y esnorqueleo
+  11.30 : salida del primer buceo y esnorqueleo
+  11.45 : van a otro lugar para esnorkelear
+  12.45 : terminan el esnorqueleo, dirección la isla
+  1.00 PM : llegan a la isla Cayo Centro, se registran a la estación de la
+  Reserva de la Biosfera y van a comer con los pescadores.
+  2.30- 3.00 : se van de la isla para ir a otro lugar de buceo y esnorqueleo
+  3.30- 4.30 : segundo tanque de buceo y otro esnorqueleo antes del regreso.
+  6.00- 6.30 : llegan a Mahahual
+info: 'Entrada 9:00 am.'
+vest: true
+snorkel: true
 ---
 "El tour de snorkel o buceo a banco Chinchorro cuenta con dos
 paradas para hacer snorkel o bucear y una visita a Cayo Centro,
