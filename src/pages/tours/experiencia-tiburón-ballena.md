@@ -26,6 +26,7 @@ includes: |-
   • Ceviche y frutas.
 info: 'Horario de entrada 7:00 am.'
 food: true
+transportation: false
 vest: true
 snorkel: true
 ---
