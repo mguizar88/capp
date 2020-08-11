@@ -13,6 +13,33 @@ price:
   children_price: 0
 tourType:
   - acuatico
+schedule: 2.5 a 3 horas.
+childs: No se admiten niños.
+underAge: La edad mínima para este tour es de 15 años.
+includes: |-
+  • Guía.
+  • Chaleco salvavidas.
+  • Café.
+  • Jugos.
+  • Tostadas.
+  • Fruta.
+  • Barra energética.
+  • Agua.
+recommendations: >-
+  La confirmación se recibirá al momento de la reserva.
+
+  La edad mínima para este tour es de 15 años.
+
+  Sujeto a condiciones climáticas favorables. Si se cancela debido al mal
+  tiempo, se le dará la opción de una fecha alternativa o un reembolso completo.
+
+  Se aplican números mínimos. Existe la posibilidad de cancelación después de la
+  confirmación si no hay suficientes pasajeros para cumplir con los requisitos.
+  En el caso de que esto ocurra, se le ofrecerá una fecha alternativa o un
+  reembolso completo.
+info: 'Hora de salida 6:45 am.'
+food: true
+vest: true
 ---
 "Nuestro guía le dará la bienvenida en nuestro punto de partida, le explicarán las reglas de seguridad para esta actividad y los conceptos básicos para el stand up paddle, no importa si es la primera vez que realiza esta actividad, lo guiaremos a través de toda la experiencia asegurándose Siempre estás seguro y cómodo.
 
