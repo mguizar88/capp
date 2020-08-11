@@ -13,6 +13,10 @@ description: >-
 price:
   adults_price: 0
   children_price: 0
+includes: 'Transporte redondo desde Cancún, ferrys, hospedaje, desayuno y tours.'
+food: true
+transportation: true
+vest: true
 ---
 En 48 horas disfrutarás lo mejor de Holbox, verás el mar brillando de noche, verás flamingos rosas,
 playas vírgenes, el atardecer impresionante, tu experiencia será increíble en esta paradisiaca isla.
