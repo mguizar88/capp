@@ -24,6 +24,13 @@ description: >-
 price:
   adults_price: 0
   children_price: 0
+includes: >-
+  Transporte redondo desde Cancún, hospedaje en hoteles seleccionados, desayunos
+  y tours.
+food: true
+transportation: true
+vest: true
+snorkel: true
 ---
 El circuito más completo donde visitarás los destinos más increíbles de la península de Yucatán recorriendo de norte a sur el hermoso estado de Quintana Roo, playas, gastronomía, cenotes, lagunas, mucha cultura y diversión recorriendo kilómetros con impresionantes paisajes en medio de la selva. Te hospedarás en hoteles de gran calidad que harán que tengas la mejor experiencia.
 
