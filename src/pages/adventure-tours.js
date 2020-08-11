@@ -192,7 +192,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark (filter: {frontmatter: {templateKey: {eq: "tour-page"}, {tourType: {eq: "aventura"}}}) {
+    allMarkdownRemark (filter: {frontmatter: {templateKey: {eq: "tour-page"}, tourType: {eq: "aventura"}}}) {
     	edges {
 		node {
 			id
