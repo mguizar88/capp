@@ -16,6 +16,13 @@ description: >-
 price:
   adults_price: 0
   children_price: 0
+includes: >-
+  Transporte redondo desde Cancún, hospedaje en hoteles seleccionados, desayunos
+  y tours.
+food: true
+transportation: true
+vest: true
+snorkel: true
 ---
 En este circuito conocerás lo mejor del sur de Quintana Roo, la impresionante laguna de 7 colores, la exclusividad de Hotel Pier en medio de la selva te harán sentir relajación total, después tendrás a solo 100 metros en frente de ti el impresionante arrecife de coral de Mahahual, podrás snorkelear y ver cientos de peces de colores, te garantizamos que habrá tortugas.
 
