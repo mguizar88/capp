@@ -8,6 +8,36 @@ price:
   children_price: 500
 tourType:
   - acuatico
+schedule: 3.5 a 4 horas.
+childs: Los niños menores de 4 años no pagan pero su asiento debe ser confirmado.
+underAge: >-
+  Los niños menores de 18 años deben estar acompañados por un adulto en todo
+  momento.
+includes: |-
+  • Bebidas: cerveza, tequila, jugo, refrescos y agua.
+  • Frutas y bocadillos.
+  • Chaleco salvavidas.
+  • Guía.
+  • Foto grupal.
+recommendations: >-
+  • Los niños menores de 18 años deben estar acompañados por un adulto en todo
+  momento.
+
+  • La edad mínima para consumir alcohol es de 18 años.
+
+  • Los niños menores de 4 años no pagan pero su asiento debe ser confirmado
+
+  • Sujeto a condiciones climáticas favorables. Si el recorrido se cancela
+  debido al mal tiempo, se le dará la opción de una fecha alternativa o un
+  reembolso completo.
+
+  • Se aplican los números mínimos. Existe la posibilidad de cancelación después
+  de la confirmación, si no hay suficientes pasajeros para cumplir con los
+  requisitos. Si esto ocurre, se le ofrecerá un reembolso alternativo o
+  completo.
+info: |
+  Horario de entrada 12:00 pm.
+  Idiomas disponibles Español e Ingles.
 food: true
 transportation: true
 vest: true
