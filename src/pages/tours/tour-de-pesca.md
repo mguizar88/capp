@@ -12,6 +12,15 @@ price:
   children_price: 0
 tourType:
   - aventura
+schedule: 6 horas.
+includes: |-
+  • Capitán y marinero
+  • Carnadas y señuelos
+  • Equipo de pesca
+  • Chalecos salvavidas
+  • Aguas y refrescos
+info: Hora de entrada libre.
+vest: true
 ---
 "Mahahual, Costa Maya el último rincón del caribe mexicano y uno de los más vírgenes lugares para la pesca deportiva de trolling o de fondo,  situado en el centro de 2 reservas ecológicas (Sian kan y Xcalak), sus aguas caribeñas albergan una destacada abundancia de diferentes especies codiciadas en la pesca de trolling como el Marlín Azul, Marlín Blanco, Pez Vela, Pez Espada, Dorado, Wahoo, Sierra, Atun y Barracudas que son casi una garantía de diversión.
 
