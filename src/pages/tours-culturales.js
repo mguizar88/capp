@@ -3,6 +3,9 @@ import Layout from '../components/Layout'
 import { Link, graphql } from 'gatsby'
 import Img from "gatsby-image"
 
+import dive from '../../static/img/dive.png'
+import vest from '../../static/img/chaleco.png'
+
 const CulturalTours = ({
 	toursBack,
 	tours
@@ -138,8 +141,28 @@ const CulturalTours = ({
 										<div>
 										    <span>
 											<i className="fas fa-clock"></i>
-											<p>? horas</p>
+											<p>{tour.frontmatter.schedule}</p>
 										    </span>
+										    {	
+											tour.frontmatter.food ?
+												<i className="fas fa-utensils"></i>
+											: ''
+										    }
+										    {	
+											tour.frontmatter.transportation ?
+												<i className="fas fa-shuttle-van"></i>
+											: ''
+										    }
+										    {	
+											tour.frontmatter.vest ?
+												<i className="icons"><img style={{width: '16px'}} src={vest} alt="vest" /></i>
+											: ''
+										    }
+										    {	
+											tour.frontmatter.snorkel ?
+												<i className="icons"><img style={{width: '16px'}} src={dive} alt="snorkel"/></i>
+											: ''
+										    }
 										    <span className="stars">
 											<i className="far fa-star"></i>
 											<i className="far fa-star"></i>
@@ -202,6 +225,11 @@ export const pageQuery = graphql`
 			frontmatter{
 				title
 				description
+				schedule
+				food
+				transportation
+				vest
+				snorkel
 				image {
 					childImageSharp{
 						fluid (maxWidth: 800, quality:100) {
