@@ -22,6 +22,12 @@ const TourComponent = ({data}) => {
 	const tulum = data.tulum
 	const snorkel = data.snorkel
 	const vacacionales = data.vacacionales
+	const schedule = frontmatter.schedule
+	const childs = frontmatter.childs
+	const underAge = frontmatter.underAge
+	const includes = frontmatter.includes
+	const recommendations = recommendations
+	const info = frontmatter.info
  
 	return(
 		<Layout>
@@ -53,32 +59,40 @@ const TourComponent = ({data}) => {
 											Horarios
 										</p>
 										<p>
-											Lorem ipsum dolor sit amet vum
+											{ schedule }
 										</p>
 									</div>
-									<div className="column is-one-third has-text-centered">
-										<span>
-										  <i className="is-purple fas fa-7x fa-child"></i>
-										</span>
-										<p className="is-purple" style={{fontSize: '26px', fontWeight: 'bold', margin: '1rem 0'}}>
-											Menores
-										</p>
-										<p>
-											Lorem ipsum dolor sit amet vum
-										</p>
-									</div>
-									<div className="column is-one-third has-text-centered">
-										<span>
-										  <i className="is-purple fas fa-7x fa-child"></i>
-										  <i className="is-purple fas fa-7x fa-female"></i>
-										</span>
-										<p className="is-purple" style={{fontSize: '26px', fontWeight: 'bold', margin: '1rem 0'}}>
-											Niños
-										</p>
-										<p>
-											Lorem ipsum dolor sit amet vum
-										</p>
-									</div>
+									{
+										underAge?
+											<div className="column is-one-third has-text-centered">
+												<span>
+												  <i className="is-purple fas fa-7x fa-child"></i>
+												</span>
+												<p className="is-purple" style={{fontSize: '26px', fontWeight: 'bold', margin: '1rem 0'}}>
+													Menores
+												</p>
+												<p>
+													{ underAge }
+												</p>
+											</div>
+										: ''
+									}
+									{
+										childs?
+											<div className="column is-one-third has-text-centered">
+												<span>
+												  <i className="is-purple fas fa-7x fa-child"></i>
+												  <i className="is-purple fas fa-7x fa-female"></i>
+												</span>
+												<p className="is-purple" style={{fontSize: '26px', fontWeight: 'bold', margin: '1rem 0'}}>
+													Niños
+												</p>
+												<p>
+													{ childs }
+												</p>
+											</div>
+										: ''
+									}
 								</div>
 							</div>
 
@@ -96,34 +110,13 @@ const TourComponent = ({data}) => {
 
 							<div className="tab-content" id="pills-tabContent">
 							  <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-							  	<ul>
-							  		<li>
-							  			<p>
-							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Ut labore et dolore magna aliqua. Quis ipsum suspendisse.
-							  			</p>
-							  		</li>
-							  		<li>
-							  			<p>
-							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Ut labore et dolore magna aliqua. Quis ipsum suspendisse.
-							  			</p>
-							  		</li>
-							  		<li>
-							  			<p>
-							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Ut labore et dolore magna aliqua. Quis ipsum suspendisse.
-							  			</p>
-							  		</li>
-							  		<li>
-							  			<p>
-							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Ut labore et dolore magna aliqua. Quis ipsum suspendisse.
-							  			</p>
-							  		</li>
-							  	</ul>
+								{ includes }
 							  </div>
 							  <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-							  	...
+								{ recommendations }
 							  </div>
 							  <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-							  	...
+							  	{ info }
 							  </div>
 							</div>	
 
@@ -196,22 +189,18 @@ const TourComponent = ({data}) => {
 								<input style={{width: '100%', backgroundColor: '#eab92a', color: '#000', marginTop: '30px'}} type="submit" className="button is-large has-text-white" value="COMPRAR" />
 							</form>           
 							<div className="terms">
-								<h3 className="title has-text-centered">Descuento Por Compra Anticipada</h3>
-								<h4 className="title">10% de descuento</h4>
+								<h3 className="title has-text-centered">¿Por qué reservar con nosotros?</h3>
+								<h4 className="title">Somos una tour operadora 100% mexicana</h4>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ipsum obcaecati esse, nesciunt pariatur, nulla ipsa rerum possimus officiis, laboriosam voluptatibus consequatur. At beatae, mollitia eaque cum consequatur necessitatibus dolore.
+									Somos una tour operadora 100% mexicana especializada en la planeación, diseño y organización de tours y experiencias personalizadas, con el firme objetivo de asegurar a nuestros viajeros una experiencia única, placentera e inolvidable.
 								</p>
-								<h4 className="title">15% de descuento</h4>
+								<h4 className="title">Nuestro servicio de calidad</h4>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ipsum obcaecati esse, nesciunt pariatur, nulla ipsa rerum possimus officiis, laboriosam voluptatibus consequatur. At beatae, mollitia eaque cum consequatur necessitatibus dolore.
+									Nuestro servicio, está enfocado en proporcionar calidad y confiabilidad, a través de la atención de nuestro personal debidamente capacitado, garantizando viajes únicos, logrando superar las expectativas de nuestros viajeros.
 								</p>
-								<h4 className="title">20% de descuento</h4>
+								<h4 className="title">Tenemos los mejores precios</h4>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ipsum obcaecati esse, nesciunt pariatur, nulla ipsa rerum possimus officiis, laboriosam voluptatibus consequatur. At beatae, mollitia eaque cum consequatur necessitatibus dolore.
-								</p>
-								<h4 className="title">¿Por qué reservar con nosotros?</h4>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ipsum obcaecati esse, nesciunt pariatur, nulla ipsa rerum possimus officiis, laboriosam voluptatibus consequatur. At beatae, mollitia eaque cum consequatur necessitatibus dolore.
+									Brindando dentro de nuestros servicios, los mejores costos en hoteles, renta de autos, traslados; así como tours en todos los puntos de interés.
 								</p>
 							</div>
 						</div>
@@ -461,6 +450,12 @@ export const tourQuery = graphql`
 					}
 				}
 				description
+				schedule
+				childs
+				underAge
+				includes
+				recommendations
+				info
 				price {
 		            adults_discount
 		            adults_price
