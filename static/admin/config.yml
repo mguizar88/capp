@@ -68,6 +68,11 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+      - file: "src/pages/transportation/index.md"
+        label: "Transportation"
+        name: "transportation"
+          fields: 
+            - {label: Transportation routes, name: routes, widget: list, fields: [{label: Departure, name: departure, widget: string}, {label: Destinations, name: destinations, widget: list, fields: [{label: Destination name, name: destination, widget: string}, {label: Price rate, name: price, widget: number}]}]}
 
   - name: "tours"
     label: "Tours"
@@ -113,7 +118,7 @@ collections:
       - {label: "Transportation", name: "transportation", widget: "boolean", default: false, required: false}
       - {label: "Life vest", name: "vest", widget: "boolean", default: false, required: false}
       - {label: "Snorkel", name: "snorkel", widget: "boolean", default: false, required: false}
-   
+      
 
 
       
