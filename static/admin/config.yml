@@ -72,6 +72,10 @@ collections:
         label: "Transportation"
         name: "transportation"
           fields: 
+            - {label: "Template Key", name: "templateKey", widget: "hidden", default: "transportation-page"}
+            - {label: Title, name: title, widget: string}
+            - {label: Image, name: image, widget: image}
+            - {label: Heading, name: heading, widget: string}
             - {label: Transportation routes, name: routes, widget: list, fields: [{label: Departure, name: departure, widget: string}, {label: Destinations, name: destinations, widget: list, fields: [{label: Destination name, name: destination, widget: string}, {label: Price rate, name: price, widget: number}]}]}
 
   - name: "tours"
