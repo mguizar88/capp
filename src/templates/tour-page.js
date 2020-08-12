@@ -7,12 +7,13 @@ import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
+
 const TourComponent = ({data}) => {
 
 	const html = data.markdownRemark.html
 	const { frontmatter } = data.markdownRemark
-	const title = data.markdownRemark.frontmatter.title
-	const img = data.markdownRemark.frontmatter.image
+	const title = frontmatter.title
+	const img = frontmatter.image
 	const description = frontmatter.description
 	const adults = frontmatter.price.adults_price
 	const children = frontmatter.price.children_price
@@ -28,6 +29,8 @@ const TourComponent = ({data}) => {
 	const includes = frontmatter.includes
 	const recommendations = frontmatter.recommendations
 	const info = frontmatter.info
+	
+	const Content = HTMLContent || Content
  
 	return(
 		<Layout>
@@ -47,9 +50,7 @@ const TourComponent = ({data}) => {
 								{title}
 							</h3>
 							<div className="tour-page-description" style={{color: '#504e4e'}}>
-								<p>
-									{description}
-								</p>
+								<Content content={html} />
 								<div className="columns" style={{marginTop: '2.1rem'}}>
 									<div className="column is-one-third has-text-centered">
 										<span>
