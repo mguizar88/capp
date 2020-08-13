@@ -109,9 +109,6 @@ export const IndexPageTemplate = ({
                       <i className="fas fa-utensils"></i>
                     </span>
                     <span>
-                      <i className="fas fa-shuttle-van"></i>
-                    </span>
-                    <span>
                       <i className="far fa-star"></i>
                       <i className="far fa-star"></i>
                       <i className="far fa-star"></i>
@@ -144,9 +141,6 @@ export const IndexPageTemplate = ({
                     <span>
                       <i className="fas fa-clock"></i>
                       <p>3 horas</p>
-                    </span>
-                    <span>
-                      <i className="fas fa-utensils"></i>
                     </span>
                     <span>
                         <i className="icons"><img style={{width: '16px'}} src={dive} alt="snorkel"/></i>
