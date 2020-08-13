@@ -22,8 +22,8 @@ includes: |-
 info: |-
   Hora de salida 8:00 am.
   Idiomas disponibles Español e Ingles.
-food: true
-transportation: true
+food: false
+transportation: false
 vest: true
 snorkel: true
 ---
