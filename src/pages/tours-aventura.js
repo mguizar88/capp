@@ -69,23 +69,23 @@ const AdventureTours = ({
 				>
 					<h3 className="title has-text-white">Tours</h3>
 					<Link className="filter-links has-text-white has-text-left" to="/tours">
-            Tours culturales y temáticos (2)
+            Tours y lugares de interés(5)
           </Link>
           <Link className="filter-links has-text-white has-text-left" to="/tours">
-            Actividades al aire libre (2)
+            Actividades al aire libre (5)
           </Link>
           <Link className="filter-links has-text-white has-text-left" to="/tours">
-            Apto para todo público (2)
+            Apto para todo el público (3)
           </Link>
           <h3 className="title has-text-white">Populares</h3>
 					<Link className="filter-links has-text-white has-text-left" to="/tours">
-            Tours culturales y temáticos (2)
+            Tours temáticos (5)
           </Link>
           <Link className="filter-links has-text-white has-text-left" to="/tours">
-            Excursiones de un día (2)
+            Actividades al aire libre (5)
           </Link>
           <Link className="filter-links has-text-white has-text-left" to="/about">
-            Actividades al aire libre (2)
+            Excursiones de un día (5)
           </Link>
      
 				</div>
