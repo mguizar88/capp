@@ -39,9 +39,9 @@ const TransportationTemplate = ({data}) => {
 			    {title}
 			  </h1>
 			</div>
-			<div className="container">
-		          <form style={{padding: '5rem 0'}}>
-			    <div className="columns">
+			<form style={{padding: '5rem 0'}}>
+		          <div className="container">
+		 	    <div className="columns">
 			      <div className="column is-half-desktop is-12-mobile">
 				<div class="field">
 				  <p class="control has-icons-left">
@@ -159,8 +159,8 @@ const TransportationTemplate = ({data}) => {
 				</div>
 			      </div>
 			    </div>
-			  </form>
-			</div>
+			  </div>
+			</form>
 		</Layout>
 
 	)
