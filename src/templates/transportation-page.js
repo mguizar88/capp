@@ -19,7 +19,7 @@ const TransportationTemplate = ({data}) => {
 			<div
 			  className="full-width-image-container margin-top-0"
 			  style={{
-			    backgroundImage: `url(${img})`,
+			    backgroundImage: `url(${img.childImageSharp.fluid.src})`,
 			    backgroundSize: 'cover',
 			    backgroundPosition: 'center',
 			    backgroundRepeat: 'no-repeat',
@@ -40,8 +40,8 @@ const TransportationTemplate = ({data}) => {
 			  </h1>
 			</div>
 			<div className="container">
-			  <div className="columns">
-			    <form>
+		          <form style={{padding: '5rem 0'}}>
+			    <div className="columns">
 			      <div className="column is-half-desktop is-12-mobile">
 				<div class="field">
 				  <p class="control has-icons-left">
@@ -158,8 +158,8 @@ const TransportationTemplate = ({data}) => {
 				  </div>
 				</div>
 			      </div>
-			    </form>
-			  </div>
+			    </div>
+			  </form>
 			</div>
 		</Layout>
 
