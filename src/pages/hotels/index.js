@@ -43,7 +43,7 @@ export default class HotelIndex extends React.Component {
         <div className="container">
           <div style={{maxWidth: '900px'}} className="tour-type-container">
             <div className="tour-type ">
-              <img className="tour-type-rounded" src={hoteles} />
+              <div className="tour-type-rounded" style={{backgroundImage: `url(${hoteles})`, backgroundSize: 'cover', backgroundPosition: 'center'}} />
               <div className="overlay is-hidden-tablet" style={{backgroundColor: `#422e6a`}}>
                 <span className="icon is-large">
                   <i class="fas fa-3x fa-gopuram"></i>
@@ -60,7 +60,7 @@ export default class HotelIndex extends React.Component {
               </div>
             </div>
             <div className="tour-type">
-              <img className="tour-type-rounded" src={casaMaya} />
+              <div className="tour-type-rounded" style={{backgroundImage: `url(${casaMaya})`, backgroundSize: 'cover', backgroundPosition: 'center'}} />
               <div className="overlay is-hidden-tablet" style={{backgroundColor: `#eab92a`}}>
                 <span className="icon is-large">
                   <i class="fas fa-3x fa-water"></i>
