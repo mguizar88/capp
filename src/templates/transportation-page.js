@@ -23,7 +23,7 @@ const TransportationTemplate = ({ data }) => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
-                    marginBottom: '150px',
+                    marginBottom: '100px',
                 }}
             >
                 <h1
@@ -40,6 +40,7 @@ const TransportationTemplate = ({ data }) => {
                 </h1>
             </div>
             <div className="container">
+		<h2 className="has-text-weight-bold is-size-2">{ heading }</h2>
                 <form style={{ padding: '5rem 0' }}>
                     <div class="field">
                         <p class="control has-icons-left">
@@ -71,7 +72,7 @@ const TransportationTemplate = ({ data }) => {
                         <p class="control has-icons-left">
                             <span class="select">
                                 <select>
-                                    <option selected>Origen</option>
+                                    <option selected>Destino</option>
                                     <option>Cancún centro</option>
                                     <option>Cancún aeropuerto</option>
                                     <option>Puerto Morelos</option>
