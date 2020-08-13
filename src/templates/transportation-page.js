@@ -39,37 +39,34 @@ const TransportationTemplate = ({data}) => {
 			    {title}
 			  </h1>
 			</div>
-			<form style={{padding: '5rem 0'}}>
-		          <div className="container">
-		 	    <div className="columns">
-			      <div className="column is-half-desktop is-12-mobile">
-				<div class="field">
-				  <p class="control has-icons-left">
-				    <span class="select">
-				      <select>
-					<option selected>Origen</option>
-					<option>Cancún centro</option>
-					<option>Cancún aeropuerto</option>
-					<option>Puerto Morelos</option>
-					<option>Playa del Carmen</option>
-					<option>Tulúm</option>
-					<option>Mahahual</option>
-					<option>Bacalar</option>
-					<option>Chiquilá</option>
-					<option>Chetumal centro</option>
-					<option>Chetumal aeropuerto</option>
-					<option>Mérida</option>
-					<option>Valladolid</option>
-					<option>Cobá</option>
-				      </select>
-				    </span>
-				    <span class="icon is-small is-left">
-				      <i class="fas fa-map-marker-alt"></i>
-				    </span>
+                        <div className="container">
+			  <form style={{padding: '5rem 0'}}>
+			      <div class="field">
+				 <p class="control has-icons-left">
+					 <span class="select">
+					   <select>
+						<option selected>Origen</option>
+						<option>Cancún centro</option>
+						<option>Cancún aeropuerto</option>
+						<option>Puerto Morelos</option>
+						<option>Playa del Carmen</option>
+						<option>Tulúm</option>
+						<option>Mahahual</option>
+						<option>Bacalar</option>
+						<option>Chiquilá</option>
+						<option>Chetumal centro</option>
+						<option>Chetumal aeropuerto</option>
+						<option>Mérida</option>
+						<option>Valladolid</option>
+						<option>Cobá</option>
+					      </select>
+					   </span>
+					   <span class="icon is-small is-left">
+						<i class="fas fa-map-marker-alt"></i>
+					   </span>
 				  </p>
 				</div>
-			      </div>
-			      <div className="column is-half-desktop is-12-mobile">
+			      
 				<div class="field">
 				  <p class="control has-icons-left">
 				    <span class="select">
@@ -97,8 +94,8 @@ const TransportationTemplate = ({data}) => {
 				  </p>
 				</div>
 			      </div>
-			      <div className="column is-half-desktop is-12-mobile">
-				<div class="field">
+			      
+			      <div class="field">
 				  <p class="control has-icons-left">
 				    <span class="select">
 				      <select>
@@ -139,28 +136,27 @@ const TransportationTemplate = ({data}) => {
 				      <i class="far fa-male"></i>
 				    </span>
 				  </p>
-				</div>
 			      </div>
-			      <div className="column is-full">
-				<div class="field">
+			      
+			      
+			      <div class="field">
 				  <div class="control">
 				    <input class="input is-large" type="text" placeholder="Nombre" />
 				  </div>
-				</div>
-				<div class="field">
+			      </div>
+			      <div class="field">
 				  <div class="control">
 				    <input class="input is-large" type="text" placeholder="Teléfono" />
 				  </div>
-				</div>
-				<div class="field">
+			      </div>
+			      <div class="field">
 				  <div class="control">
 				    <input class="input is-large" type="text" placeholder="Correo" />
 				  </div>
-				</div>
 			      </div>
-			    </div>
-			  </div>
-			</form>
+			      
+			  </form>
+			</div>
 		</Layout>
 
 	)
