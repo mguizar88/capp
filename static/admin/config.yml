@@ -76,7 +76,6 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
-          - {label: Transportation routes, name: routes, widget: list, fields: [{label: Departure, name: departure, widget: string}, {label: Destinations, name: destinations, widget: list, fields: [{label: Destination name, name: destination, widget: string}, {label: Price rate, name: price, widget: number}]}]}
 
   - name: "tours"
     label: "Tours"
@@ -123,6 +122,13 @@ collections:
       - {label: "Life vest", name: "vest", widget: "boolean", default: false, required: false}
       - {label: "Snorkel", name: "snorkel", widget: "boolean", default: false, required: false}
       
-
+  - name: "destinations"
+    label: "Destinations"
+    folder: "src/pages/destinations"
+    create: true
+    fields:
+      - {label: Departure name, name: departure, widget: string}
+      - {label: Image, name: image, widget: image}
+      - {label: Transportation routes, name: routes, widget: list, fields: [{label: Destination, name: destination, widget: relation, collection: "destinations", searchFields: ["departure"], valueField: "departure"}, {label: Price rate, name: price, widget: number}]}
 
       
