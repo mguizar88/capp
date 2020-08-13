@@ -17,17 +17,19 @@ const Circuits = ({
 		height: '400px'
         }}>
 	    <div
-		style={{backgroundColor: 'rgba(68, 53, 117, 0.9)', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-		<div style={{
-			display: 'flex',
-			height: '150px',
-			lineHeight: '1',
-			justifyContent: 'space-around',
-			alignItems: 'center',
-			flexDirection: 'row',
-		    }}>
-		    <h1 className="has-text-white">Circuitos</h1>
-		</div>
+		style={{width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+		<h1
+		    className="has-text-weight-bold is-size-1"
+		    style={{
+		      boxShadow: '0.5rem 0 0 #f1df0d, -0.5rem 0 0 #f1df0d',
+		      backgroundColor: '#422e6a',
+		      color: 'white',
+		      padding: '1rem',
+		      borderRadius: '0.5em',
+		    }}
+		  >
+		    Circuitos
+		  </h1>
 	    </div>
 	</div>
 	<div className="container" style={{
@@ -93,21 +95,6 @@ const Circuits = ({
 				))
 			}
 		    </div>
-
-		    <nav className="pagination is-centered" role="navigation" aria-label="pagination">
-			<a href="#" className="pagination-previous">Previous</a>
-			<a href="#" className="pagination-next">Next page</a>
-			<ul className="pagination-list">
-			    <li><a className="pagination-link" aria-label="Goto page 1">1</a></li>
-			    <li><span className="pagination-ellipsis">&hellip;</span></li>
-			    <li><a className="pagination-link" aria-label="Goto page 45">45</a></li>
-			    <li><a className="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
-			    </li>
-			    <li><a className="pagination-link" aria-label="Goto page 47">47</a></li>
-			    <li><span className="pagination-ellipsis">&hellip;</span></li>
-			    <li><a className="pagination-link" aria-label="Goto page 86">86</a></li>
-			</ul>
-		    </nav>
 		</div>
 	    </div>
 	</div>
