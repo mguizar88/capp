@@ -37,7 +37,7 @@ exports.createPages = ({ actions, graphql }) => {
       
       if (template != null) {
         createPage({
-          path: edge.node.fields.slug,
+          path: _.deburr(edge.node.fields.slug),
           tags: edge.node.frontmatter.tags,
           component: path.resolve(
             `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
