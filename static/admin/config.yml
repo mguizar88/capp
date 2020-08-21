@@ -121,7 +121,29 @@ collections:
       - {label: "Transportation", name: "transportation", widget: "boolean", default: false, required: false}
       - {label: "Life vest", name: "vest", widget: "boolean", default: false, required: false}
       - {label: "Snorkel", name: "snorkel", widget: "boolean", default: false, required: false}
-      
+  
+  - name: "experiencias"
+    label: "Experiencias"
+    folder: "src/pages/experiencias"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "experience-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: Image, name: image, widget: image}
+      - {label: Description, name: description, widget: string, required: false}
+      - {label: Price, name: price, widget: object, fields: [{label: Adults Price, name: adults_price, widget: number, valueType: float}, {label: Children Price, name: children_price, widget: number, valueType: float}, {label: Adults Discount, name: adults_discount, widget: number, valueType: float, required: false}, {label: Children Discount, name: children_discount, widget: number, valueType: float, required: false}, {label: Quintanarroense price, name: q_price, widget: number, valueType: float, required: false}, {label: Transportation price, name: transportation, widget: list, required: false, fields: [{label: Desde, name: from, widget: string}, {label: Precio Adultos, name: adultPrice, widget: number, valueType: float}, {label: Precio niños, name: childPrice, widget: number, valueType: float}]}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Horario", name: schedule, widget: string, required: false }
+      - {label: "childs", name: "childs", widget: "text", required: false}
+      - {label: "Under age", name: "underAge", widget: "text", required: false}
+      - {label: "Includes", name: "includes", widget: "text", required: false}
+      - {label: "Recommendations", name: "recommendations", widget: "text", required: false}
+      - {label: "Info", name: "info", widget: "text", required: false}
+      - {label: "Food", name: "food", widget: "boolean", default: false, required: false}
+      - {label: "Transportation", name: "transportation", widget: "boolean", default: false, required: false}
+      - {label: "Life vest", name: "vest", widget: "boolean", default: false, required: false}
+      - {label: "Snorkel", name: "snorkel", widget: "boolean", default: false, required: false}
+  
   - name: "destinations"
     label: "Destinations"
     folder: "src/pages/destinations"
