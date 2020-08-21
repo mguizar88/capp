@@ -28,7 +28,7 @@ const Experiences = ({
 		      borderRadius: '0.5em',
 		    }}
 		  >
-		    Circuitos
+		    Experiencias
 		  </h1>
 	    </div>
 	</div>
