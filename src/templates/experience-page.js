@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import Helmet from 'react-helmet'
 
 import Layout from '../components/Layout'
+import Content, { HTMLContent } from '../components/Content'
 
 const ExperienceTemplate = ({data}) => {
 
@@ -20,6 +21,8 @@ const ExperienceTemplate = ({data}) => {
 	const includes = frontmatter.includes
 	const recommendations = frontmatter.recommendations
 	const info = frontmatter.info
+	
+	const Content = HTMLContent || Content
   
 	return(
 		<Layout>
@@ -38,9 +41,7 @@ const ExperienceTemplate = ({data}) => {
 								{title}
 							</h3>
 							<div className="tour-page-description" style={{color: '#504e4e'}}>
-								<p>
-									{description}
-								</p>
+								<Content content={html} />
 								<div className="columns" style={{marginTop: '2.1rem'}}>
 									{
 										underAge?
