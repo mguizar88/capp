@@ -154,6 +154,9 @@ const TransportationTemplate = ({ data }) => {
                             <input class="input is-large" type="text" placeholder="Correo" />
                         </div>
                     </div>
+	            <div class="control">
+		    	<button class="button is-info">Enviar</button>
+		    </div>
 			      
 			    </form>
 			</div>
