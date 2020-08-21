@@ -3,6 +3,8 @@ import Layout from '../../components/Layout'
 import { Link, graphql } from 'gatsby'
 import Img from "gatsby-image"
 
+const _ = require('lodash')
+
 const Experiences = ({
 	background,
 	experiences,
@@ -79,7 +81,7 @@ const Experiences = ({
 							</div>
 							<div className="price ">
 							    <Link 
-								to={experience.fields.slug} 
+								to={_.deburr(experience.fields.slug)} 
 								className="button is-rounded" 
 								style={{
 								    backgroundColor: 'rgb(234, 185, 42)'
