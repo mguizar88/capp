@@ -57,7 +57,9 @@ export const IndexPageTemplate = ({
             <div className="select is-large">
               <select className="is-hovered">
                 <option>Tipo de tour</option>
-                <option>With options</option>
+                <option>Culturales</option>
+                <option>Acuaticos</option>
+                <option>Aventura</option>
               </select>
             </div>
           </div>
