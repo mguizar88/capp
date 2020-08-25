@@ -125,7 +125,7 @@ export const IndexPageTemplate = ({
                     Y nuestra última parada será "Bird Island", donde podrá disfrutar de la paz y la tranquilidad de la laguna y dependiendo de la temporada, 
                     es posible que también vea múltiples especies de aves.
                   </p>
-                  <Link to="/tours/tour-de-la-laguna-de-7-colores-de-bacalar/" className="button">Ver Más</Link>
+                  <Link to="/tours/bacalar-deluxe/" className="button">Ver Más</Link>
                 </div>     
               </div>
               <div className="carousel-item tour-card"
@@ -231,62 +231,68 @@ export const IndexPageTemplate = ({
            <span><i className="fas fa-route"></i></span>Nuestros Tours
           </h2>
           <div className="tour-type-container">
-            <div className="tour-type ">
-              <Img className="tour-type-rounded" fluid={culturales.childImageSharp.fluid} />
-              <div className="overlay is-hidden-tablet" style={{backgroundColor: `#422e6a`}}>
-                <span className="icon is-large">
-                  <i class="fas fa-3x fa-gopuram"></i>
-                </span>
-                <p>Tours Culturales</p>
+            <Link to="/tours-culturales">
+              <div className="tour-type ">
+                <Img className="tour-type-rounded" fluid={culturales.childImageSharp.fluid} />
+                <div className="overlay is-hidden-tablet" style={{backgroundColor: `#422e6a`}}>
+                  <span className="icon is-large">
+                    <i class="fas fa-3x fa-gopuram"></i>
+                  </span>
+                  <p>Tours Culturales</p>
+                </div>
+                <div className="content is-hidden-mobile">
+                  <h3 className="title">Tours Culturales</h3>
+                  <p className="description has-text-white has-text-justified">
+                    México, es uno de los países con mayor riqueza cultural, geográfica e histórica. 
+                    En nuestros tours culturales, comprenderás y disfrutarás el conjunto de rasgos y elementos distintivos, espirituales, materiales 
+                    y afectivos que caracterizan a un destino específico.
+                  </p>
+                  <span></span>
+                  <Link className="button has-text-white" to="tours-culturales">Ver Tours</Link>
+                </div>
               </div>
-              <div className="content is-hidden-mobile">
-                <h3 className="title">Tours Culturales</h3>
-                <p className="description has-text-white has-text-justified">
-                  México, es uno de los países con mayor riqueza cultural, geográfica e histórica. 
-                  En nuestros tours culturales, comprenderás y disfrutarás el conjunto de rasgos y elementos distintivos, espirituales, materiales 
-                  y afectivos que caracterizan a un destino específico.
-                </p>
-                <span></span>
-                <Link className="button has-text-white" to="tours-culturales">Ver Tours</Link>
+            </Link>
+            <Link to="/tours-acuaticos">
+              <div className="tour-type">
+                <Img className="tour-type-rounded" fluid={acuaticos.childImageSharp.fluid} />
+                <div className="overlay is-hidden-tablet" style={{backgroundColor: `#eab92a`}}>
+                  <span className="icon is-large">
+                    <i class="fas fa-3x fa-water"></i>
+                  </span>
+                  <p>Tours Acuáticos</p>
+                </div>
+                <div className="content is-hidden-mobile">
+                  <h3 className="title">Tours Acuaticos</h3>
+                  <p className="description has-text-white has-text-justified">
+                    El Caribe Mexicano, es famoso por sus maravillosas playas y aguas azul turquesa, haciendo de este un destino ideal
+                    para los amantes de la práctica de actividades acuáticas como: buceo, snorkel, pesca, nado con delfines, paseos con en barco, entre otros. 
+                  </p>
+                  <span></span>
+                  <Link className="button has-text-white" to="tours-acuaticos">Ver Tours</Link>
+                </div>
               </div>
-            </div>
-            <div className="tour-type">
-              <Img className="tour-type-rounded" fluid={acuaticos.childImageSharp.fluid} />
-              <div className="overlay is-hidden-tablet" style={{backgroundColor: `#eab92a`}}>
-                <span className="icon is-large">
-                  <i class="fas fa-3x fa-water"></i>
-                </span>
-                <p>Tours Acuáticos</p>
+            </Link>
+            <Link to="/tours-aventura">
+              <div className="tour-type">
+                <Img className="tour-type-rounded" fluid={vacacionales.childImageSharp.fluid} />
+                <div className="overlay is-hidden-tablet" style={{backgroundColor: `#4d1dad`}}>
+                  <span className="icon is-large">
+                    <i class="fas fa-3x fa-map-marked-alt"></i>
+                  </span>
+                  <p>Tours de Aventura</p>
+                </div>
+                <div className="content is-hidden-mobile">
+                  <h3 className="title">Tours de Aventura</h3>
+                  <p className="description has-text-white has-text-justified">
+                    México, es un territorio rico en condiciones biológicas, climatológicas y geográficas que permiten al turista encontrar
+                    una amplia gama de posibilidades de recreación en entornos naturales. Aventúrate y desafía tus habilidades, 
+                    con experiencias de liberación física y esparcimiento en la naturaleza. 
+                  </p>
+                  <span></span>
+                  <Link className="button has-text-white" to="tours-aventura">Ver Tours</Link>
+                </div>
               </div>
-              <div className="content is-hidden-mobile">
-                <h3 className="title">Tours Acuaticos</h3>
-                <p className="description has-text-white has-text-justified">
-                  El Caribe Mexicano, es famoso por sus maravillosas playas y aguas azul turquesa, haciendo de este un destino ideal
-                  para los amantes de la práctica de actividades acuáticas como: buceo, snorkel, pesca, nado con delfines, paseos con en barco, entre otros. 
-                </p>
-                <span></span>
-                <Link className="button has-text-white" to="tours-acuaticos">Ver Tours</Link>
-              </div>
-            </div>
-            <div className="tour-type">
-              <Img className="tour-type-rounded" fluid={vacacionales.childImageSharp.fluid} />
-              <div className="overlay is-hidden-tablet" style={{backgroundColor: `#4d1dad`}}>
-                <span className="icon is-large">
-                  <i class="fas fa-3x fa-map-marked-alt"></i>
-                </span>
-                <p>Tours de Aventura</p>
-              </div>
-              <div className="content is-hidden-mobile">
-                <h3 className="title">Tours de Aventura</h3>
-                <p className="description has-text-white has-text-justified">
-                  México, es un territorio rico en condiciones biológicas, climatológicas y geográficas que permiten al turista encontrar
-                  una amplia gama de posibilidades de recreación en entornos naturales. Aventúrate y desafía tus habilidades, 
-                  con experiencias de liberación física y esparcimiento en la naturaleza. 
-                </p>
-                <span></span>
-                <Link className="button has-text-white" to="tours-aventura">Ver Tours</Link>
-              </div>
-            </div>
+            </Link>
           </div>
           
         </div>
